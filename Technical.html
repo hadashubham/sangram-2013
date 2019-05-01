@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Technical Events</title>
+<meta charset="utf-8">
+	<meta name="description" content="SANGRAM 2013: LIET Chikani, Alwar presents
+is the annual techno-management  fest organized by the students of  LAXMI DEVI  INSTITUTE OF ENGINEERING & TECHNOLOGY from 1 march to 3 march,2013.">
+<meta name="Keywords" content="tech, lecture, LIET, Alwar,
+technology, competitions, events, workshop, exhibition, fest,
+technical, robotics, festival, sangram, rajasthan, college, techfest,india,2013,upcoming,college,fest,engineering" />
+<meta name="Author" content="Sangram 2013" />
+<meta property="og:title" content="Sangram 2013"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="http://sangram2013.in/"/>
+<meta property="og:site_name" content="Sangram 2013"/>
+<meta property="og:description" content="SANGRAM 2013: LIET Chikani, Alwar presents
+is the annual techno-management  fest organized by the students of  LAXMI DEVI  INSTITUTE OF ENGINEERING & TECHNOLOGY from 1 march to 3 march,2013."/>
+<meta http-equiv="cache-control" content="public" />
+		<meta http-equiv="expires" content="Fri, Nov 2013, 00:00:00 GMT" />
+
+<link rel="shortcut icon" href="icon.ico" type="image/png" />
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<link rel="stylesheet" type="text/css" href="css/styleproximity.css" />
+
+<style type="text/css">
+#mask {
+	display: none;
+	background: #000; 
+	position: fixed; left: 0; top: 0; 
+	z-index: 10;
+	width: 100%; height: 100%;
+	opacity: 0.8;
+	z-index: 999;
+}
+
+.login-popup-detail{
+	display:none;
+	background: #E9C49B;
+	padding: 10px; 	
+	border: 2px solid #ddd;
+	float: left;
+	font-size: 1.2em;
+	position: fixed;
+	top:10%;
+	left:10%;
+	height: 80%;
+	width:80%;
+	z-index: 9999;
+	box-shadow: 0px 0px 20px #999;
+	-moz-box-shadow: 0px 0px 20px #999; /* Firefox */
+    -webkit-box-shadow: 0px 0px 20px #999; /* Safari, Chrome */
+	border-radius:3px 3px 3px 3px;
+    -moz-border-radius: 3px; /* Firefox */
+    -webkit-border-radius: 3px; /* Safari, Chrome */
+}
+
+img.btn_close {
+	float: right; 
+	margin: -28px -28px 0 0;
+	z-index:1000000;
+}
+#info_container{
+position:relative;
+overflow:auto;
+height:100%;
+width:100%;
+z-index:10000;
+}
+.pe-thumbs{
+	background: transparent url(images/tech.png) top center;
+}
+</style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon-replace.js"></script>
+<script type="text/javascript" src="js/CabinSketch_700.font.js"></script>
+<script type="text/javascript" src="js/EB_Garamond_400.font.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/slide.js"></script>
+<script type="text/javascript" src="js/dialog_box.js"></script>   
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#Technical").validate({
+				submitHandler: function(form) {
+				// do other stuff for a valid form
+				$.post('script.php', $("#Technical").serialize(), function(data) {
+					form.reset();
+				cultural.reset();
+				showDialog('Thank You','you have been successfully registered','success');
+					});
+			}
+		});
+		});
+	</script>
+	
+<script type="text/javascript">
+$(document).ready(function(){
+$("#cultural").validate({
+				submitHandler: function(form) {
+				// do other stuff for a valid form
+				$.post('script.php', $("#cultural").serialize(), function(data) {
+		form.reset();
+				Technical.reset();
+	showDialog('Thank You','you have been successfully registered','success');
+				});
+			}
+		});
+		});
+	</script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a.login-window').click(function() {
+		
+		// Getting the variable's value from a link 
+		var loginBox = $(this).attr('href');
+
+		//Fade in the Popup and add close button
+		$(loginBox).fadeIn(300);
+		
+		//Set the center alignment padding + border
+		//var popMargTop = ($(loginBox).height() + 24) / 2; 
+		//var popMargLeft = ($(loginBox).width() + 24) / 2; 
+		
+		//$(loginBox).css({ 
+			//'margin-top' : -popMargTop,
+			//'margin-left' : -popMargLeft
+		//});
+		
+		// Add the mask to body
+		$('body').append('<div id="mask"></div>');
+		$('#mask').fadeIn(300);
+		
+		return false;
+	});
+	
+	// When clicking on the button close or the mask layer the popup closed
+	$('a.close, #mask').live('click', function() { 
+	  $('#mask , .login-popup-detail').fadeOut(300 , function() {
+		$('#mask').remove();  
+	}); 	
+	return false;
+	});
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+	//first slide down and blink the alert box
+    $("#object").animate({ 
+        top: "40px"
+      }, 2000 ).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
+   
+   //close the message box when the cross image is clicked 
+   $("#close_message").click(function()
+	{
+	   $("#object").fadeOut("slow");
+	});
+});
+</script>
+<!-- [if lt IE 9]>
+<script type="text/javascript" src="js/html5.js"></script>
+<style type="text/css">
+.bg {behavior:url(js/PIE.htc)}
+</style>
+<![endif]-->
+<!-- [if lt IE 7]>
+<div style='clear:both;text-align:center;position:relative'>
+	<a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg" border="0" alt="" /></a>
+</div>
+<![endif]-->
+</head>
+<body >
+<div id="object" class="message"> 
+  <img id="close_message" style="float:right;cursor:pointer"  src="images/12-em-cross.png" />
+    <strong>Prizes to be win for more than Rs2,50,000 </strong>
+</div>
+<div id="toppanel">
+    <div style="display: none;" id="panel">
+        <div class="content clearfix">
+            <div class="left">
+                <a href="Sangram Events coordinators name.pdf" target="_blank""><img src="sh1.png">Download Coordinators list</a>
+			</div>
+            <div class="left"><a href="sponsors  proposal.pdf" target="_blank"><img src="sh1.png">Download Sponsorship Proposal</a>
+            </div>
+            <div class="left right"><a href="venue.pdf" target="_blank"><img src="sh1.png">Download Schedule</a>
+			</div>
+        </div>
+    </div> 
+
+    <!-- The tab on top -->
+    <div class="tab">
+        <ul class="login">
+            <li class="left">&nbsp;</li>
+            <li id="toggle">
+                <a style="display: block;" id="open" class="open">Downloads !!!</a>
+                <a id="close" style="display: none;" class="close">Close Panel</a>
+            </li>
+            <li class="right">&nbsp;</li>
+        </ul>
+    </div> <!-- / top -->
+
+</div> <!--panel -->
+    
+
+<div id="fl_menu">
+				<ul id="floating_menu">
+					<li><a href="sponsers.html"><span>S</span>ponsors</a></li>
+				    <li><a href="funcorner.html"><span>F</span>unCorner</a></li>
+					<li><a href="celebrity.html"><span>C</span>elebrity</a></li>
+				</ul>	
+</div>
+
+<div class="main">
+<!-- header -->
+	<header>
+	  <div class="wrapper">
+			<nav>
+				<ul id="menu">
+					<li><a href="index.html"><span>H</span>ome</a></li>
+				    <li id="menu_active"><a href="events.html"><span>E</span>vents</a></li>
+					<li><a href="workshop.html"><span>W</span>orkshops</a></li>
+					<li><a href="special.html"><span>S</span>pecial</a></li>
+					<li><a href="Contacts.html"><span>C</span>ontacts</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+<!-- / header -->
+<!-- content -->
+	<section id="content">
+		<div class="wrapper">
+			<article class="col1">
+				<h2>Technical Events</h2><br/>
+				<div class="pad_left1 pad_bot1">
+						 <div class="container">
+			<section class="pe-container">
+				<ul id="pe-thumbs" class="pe-thumbs">
+					<li><a href="#event_info_App"class="login-window"><img src="images/Event_logos/techlogo/1.jpg" /><div class="pe-description"><h3>App making</h3><p>Click  to see the details</p></div></a></li>
+					<li><a href="#event_info_Blind"class="login-window"><img src="images/Event_logos/techlogo/2.jpg" /><div class="pe-description"><h3>Blind Coding</h3><p>Click  to see the details</p></div></a></li>
+					<li><a href="#event_info_Brain"class="login-window"><img src="images/Event_logos/techlogo/3.png" /><div class="pe-description"><h3>Brain Teaser</h3><p>Click  to see the details</p></div></a></li>
+					<li><a href="#event_info_Chat"class="login-window"><img src="images/Event_logos/techlogo/4.jpeg" /><div class="pe-description"><h3>Chat Master</h3><p>Click  to see the details</p></div></a></li>
+					<li><a href="#event_info_Circuit"class="login-window"><img src="images/Event_logos/techlogo/5.png" /><div class="pe-description"><h3>Circuit Mania</h3><p>Click  to see the details</p></div></a></li>
+					<li><a href="#event_info_debugging"class="login-window"><img src="images/Event_logos/techlogo/6.gif" /><div class="pe-description"><h3>Debugging</h3><p>Click  to see the details</p></div></a></li>
+					<li><a href="#event_info_Flip"class="login-window"><img src="images/Event_logos/techlogo/7.png" /><div class="pe-description"><h3>Flip Side</h3><p>Click  to see the details</p></div></a></li>
+					<li><a href="#event_info_Full"class="login-window"><img src="images/Event_logos/techlogo/8.png" /><div class="pe-description"><h3>Full Throttle</h3><p>Click  to see the details</p></div></a></li>
+					<li><a href="#event_info_Hydro"class="login-window"><img src="images/Event_logos/techlogo/9.bmp" /><div class="pe-description"><h3>Hydrolift</h3><p>Click  to see the details</p></div></a></li>
+					<li><a href="#event_info_Join"class="login-window"><img src="images/Event_logos/techlogo/10.png" /><div class="pe-description"><h3>Join the Valley</h3><p>Click  to see the details</p></div></a></li>
+					<li><a href="#event_info_Junkyard"class="login-window"><img src="images/Event_logos/techlogo/11.png" /><div class="pe-description"><h3>Junkyard Wars</h3><p>Click  to see the details</p></div></a></li>
+					<li><a href="#event_info_Lan"class="login-window"><img src="images/Event_logos/techlogo/12.png" /><div class="pe-description"><h3>lanturn</h3><p>Click  to see the details</p></div></a></li>
+					<li><a href="#event_info_Line"class="login-window"><img src="images/Event_logos/techlogo/13.png" /><div class="pe-description"><h3>Line Follower</h3><p>Click  to see the details</p></div></a></li>
+					<li><a href="#event_info_Off"class="login-window"><img src="images/Event_logos/techlogo/14.png" /><div class="pe-description"><h3>Off the Trail</h3><p>Click  to see the details</p></div></a></li>
+					<li><a href="#event_info_Pirates"class="login-window"><img src="images/Event_logos/techlogo/15.jpg" /><div class="pe-description"><h3>Pirates War</h3><p>Click  to see the details</p></div></a></li>
+					<li><a href="#event_info_Robo"class="login-window"><img src="images/Event_logos/techlogo/16.PNG" /><div class="pe-description"><h3>Robo Fifa</h3><p>Click  to see the details</p></div></a></li>
+					<li><a href="#event_info_Sea"class="login-window"><img src="images/Event_logos/techlogo/17.png" /><div class="pe-description"><h3>Sea Hawks</h3><p>Click  to see the details</p></div></a></li>
+					<li><a href="#event_info_Stock"class="login-window"><img src="images/Event_logos/techlogo/18.jpg" /><div class="pe-description"><h3>Stock Market</h3><p>Click  to see the details</p></div></a></li>
+					<li><a href="#event_info_Sudoku"class="login-window"><img src="images/Event_logos/techlogo/19.jpg" /><div class="pe-description"><h3>Sudoku</h3><p>Click  to see the details</p></div></a></li>
+					<li><a href="#event_info_Technical"class="login-window"><img src="images/Event_logos/techlogo/20.jpg" /><div class="pe-description"><h3>Technical Brains</h3><p>Click  to see the details</p></div></a></li>
+					<li><a href="#event_info_Vertical"class="login-window"><img src="images/Event_logos/techlogo/21.png" /><div class="pe-description"><h3>Vertical Limit</h3><p>Click  to see the details</p></div></a></li>
+					<li><a href="#event_info_Web"class="login-window"><img src="images/Event_logos/techlogo/22.png" /><div class="pe-description"><h3>Web Design</h3><p>Click  to see the details</p></div></a></li>
+					</ul>
+			</section>
+        </div>
+				</div>	
+				<br/><br/>
+								</article>		
+		<article class="col2">
+				<img src="images/sponsors.png">
+				<ul class="ul_works">
+                 <marquee  behavior="alternate" direction="up" bgcolor="" width="400" height="200">
+				 <li><a href="sponsers.html"><img src="images/sponsors/orion.png" alt="" style="border:solid" width="100" height="100" /></a>
+					&nbsp;<a href="sponsers.html"><img src="images/sponsors/priyal.jpg" alt="" style="border:solid"   height="100" width="142"/></a></li>
+				 <li><a href="sponsers.html"><img src="images/sponsors/rvm.jpg" alt="" style="border:solid"   height="60" width="258"/ > </a> </li>
+                 <li><a href="sponsers.html"> <img src="images/sponsors/hin-logo.jpg" alt="" style="border:solid"   height="100" width="100"/ > </a>
+		         &nbsp; <a href="sponsers.html"><img src="images/sponsors/appin.jpg" alt="" style="border:solid"  width="142" height="100"/></a></li>
+				 <li> <a href="sponsers.html"><img src="images/sponsors/pcra org.jpg" alt="" style="border:solid"  height="60" width="258"/></a></li>
+				 <li><a href="sponsers.html"><img src="images/sponsors/cafe_chokolade_final_logo.png" alt="" style="border:solid"   height="100" width="130"/></a>
+				 &nbsp; <a href="sponsers.html"><img src="images/sponsors/201106031501338520_35832.jpg" alt="" style="border:solid"   height="100" width="114"/></a></li>
+				 <li> <a href="sponsers.html"><img src="images/sponsors/go4tech.jpg" alt="" style="border:solid"   height="100" width="142"/ ></a>
+				 &nbsp; <a href="sponsers.html"> <img src="images/sponsors/logo la-vita.jpg" alt="" style="border:solid"   height="100" width="100"/ ></a> </li> 
+				 <li>&nbsp; <a href="sponsers.html"><img src="images/sponsors/IMG.jpg" alt="" style="border:solid"   height="100" width="121"/ ></a></li>
+				 <li> <a href="sponsers.html"><img src="images/sponsors/goyal investment.JPG" alt="" style="border:solid"   height="80" width="258"/ ></a></li>
+				 <li> <a href="sponsers.html"><img src="images/sponsors/Manav classes.jpg" alt="" style="border:solid"   height="80" width="258"/ > </a></li>
+				 <li><a href="sponsers.html"> <img src="images/sponsors/gatehelpdesk logo.jpg" alt="" style="border:solid"   height="80" width="258"/ ></a></li>
+		</marquee>	</ul>
+				 <img src="images/events.png">
+				 <ul class="ul_works">
+                 <marquee behavior="repeat" direction="up" bgcolor="">
+				 <li><a href="events.html"><img src="images/Event_logos/techlogo/20.jpg" alt=""></a></li>
+                 <li><a href="events.html"><img src="images/Event_logos/Cultlogos/3.jpg" alt=""></a></li>
+				 <li><a href="events.html"><img src="images/Event_logos/techlogo/2.jpg" alt=""></a></li>
+                 <li><a href="events.html"><img src="images/Event_logos/Cultlogos/4.png" alt=""></a></li>
+				 <li><a href="events.html"><img src="images/Event_logos/techlogo/12.png" alt=""></a></li>
+                 <li><a href="events.html"><img src="images/Event_logos/Cultlogos/7.png" alt=""></a></li>
+				 <li><a href="events.html"><img src="images/Event_logos/techlogo/16.PNG" alt=""></a></li>
+                 <li><a href="events.html"><img src="images/Event_logos/Cultlogos/19.jpg" alt=""></a></li>
+				 </marquee>			
+    			</ul>
+				<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fsangram2013%3Fref%3Dts%26fref%3Dts&amp;width=292&amp;height=258&amp;show_faces=true&amp;colorscheme=light&amp;stream=false&amp;border_color&amp;header=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:274px; height:258px;" allowTransparency="false"></iframe>
+
+			</article>
+	</div>
+		
+	</section>
+<!-- / content -->
+<!-- footer -->
+	<footer>
+		<div class="wrapper">
+			
+			
+			<article class="col pad_left2">
+				
+			</article>
+		</div>
+	</footer>
+<!-- / footer -->
+</div>
+		<div id="event_info_Circuit" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<div id="info_container">
+		<h2>Circuit Mania</h2>
+<p><strong>Introduction :</strong><br> Circuit Mania is a two level event with circuits as the main flavor and designing as bliss to it. It requires the participants to design various circuits for given problems. However, the levels of these problems are so kept so that students from any year with any diverse engineering background may try their hand in this event.  <br> <strong> Description :</strong><br> Each participant team would be given components (Viz IC's, Resistors, Diodes, Wires, Transistors, etc) for implementing the circuit problem given to them. The basic idea and the concept required shall also be given along with the problem. In order to make students competent enough to participate in this event an optional briefing would be delivered so as to make them well acquainted with the approach of circuit designing. The briefing would include basic concepts required to design the circuits while explaining how to use components that are essentially required in circuit designing such as working on breadboards and few essential IC's. Time duration for the designing of the circuit at each level would be fixed. Team qualifying the second Round (time duration matter) would be considered as the winner of the event. <br><strong>Rounds :</strong><li>First round will be a technical test (MCQ Type) containing 25 Questions.
+</li><li>	In second round you have to design a circuit according to the given problem statement.</li>
+<br><strong>Rules :</strong><li>1. Each team can have maximum of 2 participants.</li>
+<li>2. The duration of each level is around 20 minutes. The duration is fixed and any request for extra time would not be entertained.</li>
+
+<li>3. The components required for the designing would be provided to the team. However, the use of any component beyond what is provided would be prohibited.</li>
+
+<li>4. Circuital Problems along with the necessary basic idea would be given at the instant of starting of the event.</li>
+
+
+<li>5. Each team would have to get the circuit checked before switching on the main supply.</li></ul>
+<br><strong>Entry Fee :</strong>&nbsp;Rs/- 20 <br><strong>Prize Money :</strong><li>	Prize money for the team Securing 1st rank is  1500 Rs.
+</li><li>	Prize money for the team Securing 2nd rank is  1000 Rs.</li>
+</div>
+		</div>
+
+
+
+
+<div id="event_info_Flip" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<div id="info_container">
+		<h2>Flip Side</h2>
+<p>
+ <strong> Description :</strong>&nbsp;Three rounds will be there-<br><strong>Round 1:</strong>&nbsp; GROUP DISCUSSION ROUND<br>1ST round is the group discussion round in WHICH THE participants are divided into groups and they will be given a topic over which they have to discuss for about 5 minutes and have to give their views over the topic.<br><strong>Round 2</strong>&nbsp;EXTEMPORE ROUND<br>2nd round is the extempore round on which participants will be given a topic and they have to present their views (may be for the motion or against the motion) for 2 minutes ,then there will be the questions from judges side (it may related to current affairs or test of your general knowledge).
+<br><strong>Round 3</strong>&nbsp;FLIP SIDE ROUND<br>3rd round is the flip side round in which each participants is given a topic , for which he/she have to speak for the motion for 1minute & after that a bell will ring and immediately participant have to speak against the motion over the topic.<br><strong>Round 4</strong>&nbsp;PRESENTATION ROUND<br>last round is the presentation round every participant has to give a presentation over the topic for about 10 minutes. (Topic is of our choice.)	<br><strong>Prize Money :</strong>1st Prize 2000<br>2nd Prize 1000</div></div>
+
+
+
+
+
+
+<div id="event_info_Vertical" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<div id="info_container">
+		<h2>Vertical Limit</h2>
+<p> <strong> Description :</strong><br>A water rocket is a type of model rocket using water as its reaction mass. The pressure vessel the engine of the rocket is usually a used plastic soft drink bottle. The water is forced out by a pressurized gas, typically compressed air. It is an example of Newton's third law of motion.The bottle is partly filled with water and sealed. The bottle is then pressurized with a gas, usually air compressed from a bicycle pump, air compressor is used to launch the rocket.
+<br><strong>Prize Money :</strong>1st Prize 1000<br>2nd Prize 500
+	</div></div>
+
+
+
+
+
+<div id="event_info_debugging" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<div id="info_container">
+		<h2>Debugging</h2>
+<p><strong>Introduction :</strong><br>Bugs are present everywhere in this world, sothere are bugs in Computer programs .If you consider yourself a programmer then come and show ur talent
+debugging is an event in which u ‘ll be given some riddles. Guess the riddles and then remove the bugs in given programswithin a given time duration.
+.<br><strong>Prize Money :</strong>1st Prize 1000<br>2nd Prize 500
+	</div></div>
+
+
+<div id="event_info_Off" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<div id="info_container">
+		<h2> Off The Trail</h2>
+<p><strong>Introduction :</strong><br>&nbsp; All the participants will have race in off road condition with their bots. Only 1st ,2nd ,3rd will be awarded with the prize money.
+.<br><strong>Entry Fee :</strong><br>&nbsp; Rs/- 50<br><strong>Rules </strong><br>a. 1st Round will be Qualifying round.<br>b. 2nd Round will be race against time for Qualifiers in different tracks.<br>c. 3rd Round will be those who will complete the 2nd round.<br>
+d. Servo and stepper motors can be used, stairing mechanism can also be used. Modification in the ready made bots can also be accepted ,only wireless bots are allowed, power supply under 12 volts.<br><strong>Judging Criteria</strong><br>>> 1st Round – Bots which complete the race.<br>
+>>2nd Round – Priority to those which will complete the race in lesser  time to other bots.<br>
+>>3rd Round- Two bots will be raced.<br><strong>Specification Of Boat :</strong><br><li>	The boat must be fit in a box of 300mm*250mm*250mm.</li> 
+<li>	Participants can make 4 by 4 bot means you can use any number of motors .</li>
+<li>	Readymade boat is only allowed after the modification on the bot.</li>
+<li>	Servo and stepper motors can be used;stairing mechanism can also be used.</li>
+<li>	Only wireless bots are allowed, power supply under 12 volts.</li>
+<br><strong>Prize Money :</strong>1st Prize 3000<br>2nd Prize 1500
+
+
+	</div></div>
+
+
+
+<div id="event_info_Junkyard" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<div id="info_container">
+		<h2> Junkyard Wars</h2>
+<p><strong>Introduction :</strong><br>&nbsp; Participants will have to complete the task using scrap material, in a specified time and region.
+.<br><strong>Entry Fee :</strong><br>&nbsp; Rs/- 50<br><strong>Rules </strong><br>1.	Only 1 person is allowed to collect the scrap material.<br>
+2.	Foreign material is not allowed<br>
+3.	No extra time would be given<br>
+4.	Max 5 participant are allowed in 1 team
+<br><strong>Prize Money</strong><br>1st Prize Rs/- 2100 <br> 2nd Prize Rs/- 1100 
+
+	</div></div>
+
+
+
+<div id="event_info_Web" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<div id="info_container">
+		<h2>Web design</h2>
+<p> <strong> Description :</strong><br> This competition   Where in a task of designing a small website, will be given to each participant using      an editor e.g. Notepad,  Adobe  Dreamweaver, Visual Studio etc.  Within Max. 3 hours.
+<br><strong>Rules :</strong>&nbsp; <br><li>	Use of electronic devices like cell phone, pen drive is prohibited, and will be considered as cheating .That participant will be disqualified from the event.</li> 
+<li>	Two participants who complete the given task in the appropriate manner in time then they will be declared winner as per rank.</li>
+<li>	Decision by judges will be final.</li>
+
+<br><strong>Prize</strong><br>The winner will be awarded by money of Rs/- 1500 for 1st and Rs/- 1000 for 2nd. And a commitment letter for doing a free course (any) from INFOSYSTEM SOLUTION by NITIN PALIWAL  with certificate.
+ The runner-up will be awarded by a prize money of    500 with certificate.
+	</div></div>
+
+
+
+
+<div id="event_info_Join" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<div id="info_container">
+		<h2>Join The Valley</h2>
+<p> <strong> Description :</strong><br>The participants have to build a bridge that can bear maximum load made up of only generally aware ice cream sticks, with the help of an adhesive.The participants have to build a bridge that can bear maximum load made up of only generally aware icecream sticks, with the help of an adhesive. The bridge that will support maximum load without failure will be the winner.<br><strong>Rules :</strong><li>It should look like a bridge that means it should join the two platform without any support in between the platforms.</li> 
+<li>The dimensions should be followed strictly else the team may be disqualified.</li>
+<li>The decision of the judges will be final.</li>                                                                                                                                                                                                
+<li> MAXIMUM OF 3 PARTICIPANTS IN A TEAM IS ALLOWED.</li>
+<br><strong>DIMENSION for Base (mandatory) :</strong><br><li>Length of bridge = 100 cm*</li>
+<li>Width of bridge = 20cm*</li>
+<li>Thickness of base = 5cm (maximum)</li>
+<li>Height of the pillar = 10 to 15 cm*</li>
+<li>Cross section of the pillar 20*20 (maximum)</li>
+
+<br><strong>Prize Money :</strong><br><li>1st Prize Rs/- 2100</li>
+  <li>2nd Prize Rs/- 1500</li>
+
+</div>
+		</div>
+				<div id="event_info_Lan" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<div id="info_container">
+		<h2>LAN-Turn</h2>
+<p><strong>Tag Line:</strong>&nbsp; It's a LAN Gaming. <br> <strong> Description :</strong>&nbsp;  It is a type of gaming which is played b/w diff. players on diff PCs against one another or by making team.<br><strong>Entry Fees:</strong>&nbsp; 30 <br><strong>Rules :</strong>&nbsp; No threat codes are allowed , Automatic Snipers are not allowed , No user customization is allowed.<br>
+<strong>Prize Money :</strong>For Counter Strike Prize Rs/- 1000<br>For NFS Prize Rs/- 1000<br>For Cricket Prize Rs/- 1000
+</div>
+		</div>
+
+
+
+
+<div id="event_info_Technical" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<div id="info_container">
+		<h2>Technical Brains</h2>
+<p><strong> Description :</strong><br>Paper presentation is a contest in which students express their technical knowledge, thoughts and ideas through a power point presentation.
+<br><strong>Rules :</strong><br><li>	Only technical topics are allowed, participants can choose any technical topic of their interest.</li>
+<li>	Participants first need to send an abstract of their topic in about 120 words (max).</li>
+<li>	If your abstract is selected, then you need to prepare a POWERPOINT PRESENTATION on the same topic, presentation on any other topic would be rejected.</li>
+<li>	Directly copying the matter from internet is not appreciated, you should do a thorough study of your topic.</li>
+
+<br><strong>Suggestions :</strong><li> study the research papers available on your topics.</li>
+<li>	The presentation would be of (9+1) minutes. (1 minute for the question-answer round).</li>
+<li>	Maximum two members per team allowed.</li>
+<li>	Top two candidates form each branch from day-1 would present their paper again on day-2.</li>
+<li>	Final results would be made by judges only.</li>
+
+<br><strong>Prize Money :</strong>&nbsp;1st Prize Rs/- 2000<br>&nbsp; 2nd Prize Rs/- 1000
+		</div>
+			</div>
+		<div id="event_info_Sea" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<div id="info_container">
+		<h2>Sea Hawks</h2>
+<p><br> <strong> Description :</strong>&nbsp;<br/>  The competition is to design a Remote Controlled boat with onboard battery supply. The competition is designed to check the accuracy of the boats in navigation, steering, controlling and the design.The competitions will be completed in two rounds. 
+<br><strong>Task :</strong>&nbsp; The boat should complete theirarena. At a time two boats will bein arena.<br>
+<strong>Machine Specification  :</strong><li>	The boat should be fully remote controlled with onboard battery.</li>
+<li>	The boat must be fit in a box of 300mm*250mm*250mm.</li> 
+<li>	The boat’s hull must touch the surface of the water (i.e. you cannot build a hovercraft or submarine).</li>
+<li>	 The boat’s hull may be manufactured from any material(s) of your choice. Use of a readymade hull is not allowed and will result in disqualification.</li>
+<li>	There is no restriction on number of motors used.</li>
+<li>There is no restriction on number of propellers used.</li>
+<li>	Only onboard power supply is allowed, no external power supply is allowed. Voltage difference between any two points on the boat should not exceed 12V.</li>
+<li>	The boat may be wired or wireless.</li>
+ 
+<br><strong>Rules :</strong><li>	Maximum number of team members allowed is 3.</li>
+
+<li>	Participants are not allowed to keep anything inside the arena other than their participating boats.</li>
+<li>	Laptops/personal computers are not allowed near the arena. Other Wi-Fi, Bluetooth, etc. devices must be switched off.</li>
+<li>	The time &points measured by the organizers will be final and will be used for scoring the teams.</li> 
+<li>	Participants are allowed to use their remote ONLY at the time of their run. If anyone found using a remote at time other than their runtime, that team will be disqualified straightaway.</li>
+<li>	Once the boat enters the arena (into the water) the organizers are not responsible for any kind of malfunction or damage to the boat, the participants will be solely responsible for their boat once the boat is inside the arena.</li>
+<li>	After completing the first round the selected teams will move to Next round.</li>
+<li>	In Next round the boat should collect the ball and take it to the desired destination.</li>
+ <br><strong>Prize Money :</strong>1st Prize 2500<br>2nd Prize 1500
+	</div>
+	</div>
+
+
+
+
+
+
+<div id="event_info_Blind" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<div id="info_container">
+		<h2>BLIND CODING</h2>
+<p><strong>Introduction :</strong>Blind coding is a simple programming event in C/C++
+No compilation is allowed to check the errors.
+<br>
+<strong>Rules :</strong> <br>Time 1 hr.<br>
+Two rounds:<br>
+Round 1:&nbsp;List problems will be given and for each correct program 3 marks will be awarded and for wrong program 1 mark will be deducted. Top students will be selected for the next round on the basis of scores.<br>
+Round 2:&nbsp;Two problem statements will be provided to the selected students. And the student who solves the problem first, will be the winner.
+<br><strong>Prize Money :</strong><br>1st Prize Rs/- 1500<br>2nd Prize Rs/- 1000
+ </p>
+</div>
+</div>	
+
+
+
+		<div id="event_info_Brain" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+<div id="info_container">		
+				       <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<h2>Brain Teaser</h2>
+<p><strong> Description :</strong>&nbsp; This will be a quiz game show of 2 rounds- first round will be written test and second round will be of basic quiz game show.<br><strong>Entry Fees :</strong>&nbsp; 30 perteam<br>
+<strong>Rules :</strong>&nbsp; Written test will be held in which total no of 6 teams will qualify.<br><strong>Prize Money :</strong>1st Prize 1000<br>2nd Prize 500</p>
+</div></div>
+
+
+<div id="event_info_Chat" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+<div id="info_container">		
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<h2>Chat Master</h2>
+<p><strong> Description :</strong>&nbsp; This event is all about the typing speed of the participants along with 
+his accuracy. Speed will be calculated in word per minute with a 
+continous typing of 10 minute. Every participants will get a CD of  typing tutor softwares.
+<br><strong>Entry Fees :</strong>&nbsp; 10 per head<br>
+<strong>Rules :</strong>&nbsp; The game consist of two rounds.
+<br>
+ROUND 1st : &nbsp;
+1ST Round is 10 minute typing which consist of simple typing with lower case letters. In this round the total speed will be calculated with its accuracy level.
+The candidate having typing speed more than 25 wpm will be selected for the next level.
+<br>
+ FINAL ROUND: &nbsp;
+	<br>In this round the participants will be given an article consist of symbols and combination of lower and upper case letters. The participants complete the article with highest speed and accuracy will win.
+<br><strong>Prize money :</strong>1st Prize Rs/- 700<br>2nd Prize Rs/- 300<br><strong>NOTE: 
+</strong><li>	Hard copy article will be provided in each round.</li>
+<li>	Personal laptops/ USB keyboards are allowed to give Typing test.</li>
+</p>
+</div></div>
+
+
+
+	<div id="event_info_Hydro" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+<div id="info_container">		
+				       <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<h2>Hydro Lift</h2>
+<p><strong> Description :</strong><br> In Hydro lift Participants have to make a crane' type machine which can lift a given weight and can shift it from ground to a specific platform; while the base of lifting machine remain stationary and arm can move.
+<br><strong>Entry Fees :</strong>&nbsp; 20 per head<br>
+<strong>Rules :</strong><br><li>	The maximum time of 5 minutes is given to each team in second round to lift and shift as much weight blocks as they can.</li>
+<li>	The crane should be controlled by syringes only.</li>
+<li>	Maximum of two people will be allowed to control the machine at any point of time.</li>
+<li>	Maximum of 3 members per team are allowed.</li>
+<li>	Design and number of syringe used have their own marks.</li>
+<li>	Any damage to arena or weights is not allowed. Team found damaging will be disqualified immediately.</li>
+<li>	 The organizers reserve all rights to change any of the above rules as they deem fit. Change in rules, if any will be highlighted on the website and events FB page.</li>
+<li>	In any situation if more than one team have same points for first position; then the weight of machine and number of syringes used, will be the judging criteria.</li> 
+<li>	In case of any discrepancy the decision of the judges will be final and binding to all.</li>
+<br><strong>Prize money :</strong>1st Prize Rs/- 5000 <br>2nd Prize Rs/- 2500<br><strong>Machine Specification :</strong>Machine:
+<li>	Max Height:  1 ft</li>
+<li>	Max.Width (Arm Length):&nbsp;2 ft</li>
+<li>	Min. Width (Arm Length):           &nbsp;          1 ft</li>
+<li>	Body Material:         &nbsp;                               Any Type</li>
+<li>	The mechanism which is adopted to grab the weight from ground can be of ANY type; Hooks are NOT allowed.</li>
+<li>	Max. No. of Syringes allowed                10  
+                     (Max. 4 Syringes of 50 ml and other of 10 ml are allowed.)</li>
+<li>	Overall base area should not exceed 100cm2.</li>
+</p>
+</div></div>
+	
+	
+	
+	
+	<div id="event_info_Line" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<div id="info_container">
+		<h2>Line Follower</h2>
+<p><strong>Introduction :</strong>&nbsp; Race your line tracking robots on arenas with hills and valleys! Speed matters for sure!
+<br>
+<strong>Problem Statement :</strong><br>The participants should build an autonomous robot that can follow the given path in minimum possible time, without deviating from the line. The aim of the event is to check the stability and sensing capabilities of the robot in comparison with other opponents.
+<br><strong>Rules :</strong> <br><li>	Robot must be fully autonomous. Any link to off-board computers is strictly prohibited.</li>
+<li>	The bot must fit into a cube of 25 cm x25 cm x 25 cm at all times. It may not expand at any point during its run beyond these dimensions.</li>
+<li>	The power supply for the bot should be contained on-board, and should not exceed 24V between any two points in the circuit.</li>
+<li>	Any robot that is deemed by event organizers to be harmful or damaging to either people or the track will be disqualified immediately.</li>
+<li>	A robot can utilize on-board memory to its advantage.</li>
+<br>
+<strong>Task Specification :</strong><li>	The length and layout of the track will be revealed on the day of the event.</li>
+<li>	Other specifications of the track are as follows:-</li>
+<li>	The width of the line will be constant (2cm) throughout the track with a possible error of 5%.</li>
+<li>	The track might also contain few crossovers (places where the line crosses itself), but they will be at 90 degrees to each other. </li>
+<li>	At certain parts , the track may fork into 2 paths.</li>
+<li>	At the beginning of each crossover or fork, there will be a tag provided on any side of the track. It would be advantageous for the bot to proceed along the path indicated by the tag.</li>
+<li>	There could be minor discontinuities (<1cm) in the track.</li>
+<li>	The track will be no closer than 15 cm to the edges of the rectangular arena on which the track is made.</li>
+<li>	The track will be of white color on a black background. However, the white color may not be completely uniform and there might be slight variation in color.</li>
+<li>	The arena is made of wood such that there is sufficient friction for the robot.</li>
+<li>	White tags will be painted on turns. The width of the tags is 2cm and they will be placed at the start of the curvatures. The tags will be 2cm away from the line.</li>
+<li>	No tags shall be provided on simple curvatures.</li>
+<li>	There might be elevations at certain parts of the track of maximum 10 degrees.</li>
+ <br><strong>Prize Money :</strong>1st Prize 2500<br>2nd Prize 1500</p>
+</div>
+</div>
+	
+	
+<div id="event_info_Pirates" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+<div id="info_container">		
+				       <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<h2>Pirate Wars</h2>
+<p><strong> Description :</strong>&nbsp;The Team has to make a boat which can complete the task provided during the gameplay.<br><strong>Entry Fees :</strong>&nbsp; 30 perteam<br>
+<strong>Rules :</strong><li> Each team cannot have more than 3 team members in the team and no team member can participate through more than 1 team.</li> 
+<li> Any team which is not ready at the time of their call for the run will be marked for disqualification or will be penalised as per decided by the organising team.</li> 
+<li> The decision of the Judges will be last and binding to all.</li>
+<li> The organising team bear all the rights to change any of the above rule as per required.</li> 
+<li> The Team may comprise of members from different colleges but they still should not be more than 3.</li>
+<br><strong>GAMEPLAY:</strong>
+&nbsp; There will be 2 rounds in the event:
+<br>
+&nbsp;Round 1:-<br>   
+ In round one every team will have to complete two laps of  the whole track provided in minimum time .The best record will be qualified to next round.
+<br>
+&nbsp;Round 2:-<br>
+  This will be a war between boats. Last boat sailing will be winner. 
+<br><strong>Specification :</strong><li>The boat should be fully remote controlled (wired or wireless) with onboard battery.</li> 
+<li> The boat must be of dimensions 300mm*300mm*250mm excluding propellors and cutters.</li>
+<li> The boat’s hull must touch the surface of the water (i.e. you cannot build a hovercraft or submarine). </li>
+<li> The boat’s hull may be manufactured from any material(s) of your choice. Use of a ready made hull is not allowed and will result in disqualification.</li> 
+<li> There is no restriction on number of motors used.</li> 
+<li> There is no restriction on number of propellers used.</li> 
+<li> Only onboard power supply is allowed, no external power supply is allowed. Voltage difference between any two points on the boat should not exceed 12V.</li>
+<li> The teams must take precautionary measures to ensure that their remote’s frequency does not clash with the opponent's frequency at any point of time. Teams failing to ensure this, will be disqualified.</li>
+<li> All electronic connections, circuit boards and terminals must be sealed properly, the boats will be checked for this criterion prior to the competition.</li>
+<br><strong>Prize Money :</strong>1st Prize Rs/- 3000<br>2nd Prize Rs/- 2000</p>
+</div></div>	
+
+
+
+	<div id="event_info_Robo" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+<div id="info_container">		
+				       <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<h2>ROBO – FIFA</h2>
+<p><strong> Description :</strong><br>This event is about the football game between robo-teams, each team consisting of two robots. There would be only 2 members per robo, which means, a team will be having 4 members with 2 bots.
+
+There will be number of rounds for competition. As you go-on winning the game, you will be qualified for the next round.<br>
+Rounds &nbsp; <li>Group stages</li>
+		<li>Quarter finals</li>
+		<li>Semi finals</li>
+		<li>Finals</li>
+<li>The winner and the runner up of the event will be awarded with a magnificent amount of money.</li>
+<br><strong>Problem Statement :</strong><br> In this competition, you will be given some time as per football game and you have to score goals against your opponent, by carrying or moving it to opponent’s goal. The team with maximum number of goals wins the match and propagates for the next round.
+You will get 2 half of 2 minutes each, i.e., a total of 4 minutes game.
+<br>
+<strong>Rules :</strong>&nbsp; <li>The weight of robot must not exceed 6kg.</li>
+<li>Battery to be used in this event must also not exceed 12V.</li>
+<li>The decision of judges will be final and must not be debatable.</li>
+<br><strong>Prize money :</strong>1st Prize Rs/- 2500<br>2nd Rs/- 1500</p>
+</div></div>
+
+	
+	
+	<div id="event_info_Stock" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+<div id="info_container">		
+				       <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<h2>Stock Market Challenge</h2>
+<p><strong> Description :</strong><br> Stock market challenge is an online simulation trading game where you create and manage your own portfolio and complete with other players in a risk free environment.<br><strong>Entry Fees :</strong>&nbsp; 30 perteam<br>
+<strong>Rules :</strong><br><li>Time 2 hrs (11:00 am – 1:00 pm)</li>
+<li>Starting balance Rs 1000000</li><br><strong>Prize Money :</strong>Rs/- 4000
+</div></div>
+
+
+    <div id="event_info_Sudoku" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+<div id="info_container">		
+				       <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<h2>Sudoku</h2>
+<p><strong> Description :</strong><br> THE PARTICIPANTS HAVE TO SOLVE THE SUDOKU. THIS EVENT IS OF 3 ROUNDS. 30 FASTEST STUDENTS  FROM THE TOTAL PARTICIPANTS WILL BE QUALIFIED FOR THE SECOND ROUND.ONLY 10 PARTICIPANTS WILL BE QUALIFIED FOR THE FINAL ROUND.THE ONE SOLVING THE FINAL ROUND SUDOKU IN MINIMUM TIME WILL BE THE WINNER.
+<br><strong>Prize Money :</strong>Rs/- 500</div></div>
+    <div id="event_info_App" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+<div id="info_container">		
+				       <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<h2>App making</h2>
+<p><strong> Description :</strong><br> This competition is based on designing a small application, based on android or java. Participants will be provided with the required softwares (eclipse IDE with Android and Java SDK) for the development. Time provided will be 2 hrs atleast.
+<br><strong>Rules :</strong></br>>>	Internet will be provided to the participants.</br>
+>>	The application should be executed in the given time. </br>
+>>	Decision by judges will be final.
+
+<br><strong>Prize Money :</strong>1st prize- 1500, 2nd prize-500</div></div>
+   
+   
+
+
+
+
+<div id="event_info_Full" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+	
+    <div id="info_container">
+		<h2>Full Throttle</h2>
+<p><strong>Introduction :</strong><br>From the moment "GO" begins the race and all throughout you keep dreaming of just one place, The Check line. Gripping the ground and raising the gear you keep moving but finally comes the fear and apart from winning you just don’t care. When your IC engine car hits the race let the track itself say, oh!! Here comes the one that shall show you the way. <br><strong>Tasks :</strong><br>Make a wireless remote controlled machine, powered by only an IC engine, which can race against other opponents on an off-road dirt track with many obstacles. <br><strong>Task</strong><br>Make a wireless remote controlled machine, powered by only an IC engine, which can race against other opponents on an off-road dirt track with many obstacles.
+<br><strong>Machine Specification :</strong><br><li>Machine should fit in a box of dimensions 800mm x 600mm x600mm(depends on the feasibility and size of cooling system) (l x b x h) at any moment of time during the race. The external device which is used to control the machine is not included in the size constraint.</li> 
+<li> The machine should be controlled by a wireless remote control mechanism throughout the race.</li> 
+<li> The machine must not be made from Lego parts, or any ready-made assembly kits other than the parts mentioned below. Readily available chassis layouts are not allowed. Any machine found having a ready-made chassis will be disqualified.</li> 
+<li> The machine may be roughly classified into structural and functional parts: <br>
+
+Functional parts - Gears, differential gear, engine, springs, shock absorbers, servo motors (non-propulsion purposes only), batteries, wheels, wheel hub are allowed to be used as available in the market. Structural parts - Chassis, steering mechanism, shock towers, suspension (excluding upper suspension arm, suspension spring and shock absorbers), have to be built by the participants themselves. 
+Judging for the same will be strict and the participant will be immediately disqualified if any of the above structural components are found to be ready-made.</li> 
+<li> The tires used must have a minimum diameter of 3 inches. You are advised to use tires of good width for better performance on dirt tracks.</li> 
+
+<li> Brake Mechanism: It is compulsory to incorporate braking mechanism in the car. Participants have to fabricate the brake pad as well as brake disk as a part of the braking mechanism. Any other part used in braking mechanism can be ready-made.</li> 
+	
+<li> Wheel Hub: Any part rigidly attached to the wheel hub will be considered as a part of it and hence can be ready-made. An example here is that of the ball stud. </li>
+
+<li> Steering Mechanism: Any part which is connected to steering rod rigidly i.e. has no degrees of freedom with respect to steering rod (example: heim joint) will be considered as part of steering rod and thus has to be fabricated by participants.</li> 
+<li> Suspension mechanism: Any part rigidly connected to suspension arms or one with no degrees of freedom with respect to suspension arm will be considered as its part and has to be fabricated by the participants, except the upper suspension arm. For example both the heim joint for the upper suspension arm and the stud rigidly connected to the wheel hub can be bought from the market.</li> 
+
+<li> If there are parts used in the concerned joint which are neither rigidly connected with suspension or the hub, steering system or hub; they can be used ready-made from the market.</li> 
+<li> The above pictures are just sample pictures for you to understand the rules easily. </li>
+<br><strong>General Rules :</strong><br><li>The teams may obtain a time slot for practice before first round of the game. The number of practice slots will be limited and the slots will be given on a first come first served basis. The teams will get to use the track only during the time of their practice slot. Any requests for using the track at any other time will not be entertained. </li>
+<li> Any team that is not ready at the time specified will be eliminated from the competition automatically. </li>
+<li> The teams must adhere to the spirit of healthy competition. The teams must not damage the opponent's machine in any way. Judges reserve the right to disqualify any team indulged in misbehavior. </li>
+<li> The name of your machine should be prominently displayed on the machine.</li> 
+<li> Judges decision shall be treated as final and binding on all.</li> 
+<li> The organizers reserve the rights to change any or all of the above rules as they deem fit. Change in rules, if any will be highlighted on the website and notified to the registered participants.</li>
+<br><strong>Prize Money :</strong><br>1st 10,000, 2nd 5000
+   
+
+	</div></div>
+		
+	
+<!-- The contents (if there's no contents the ribbon acts as a link) -->
+		<div class="forkit-curtain">
+			<div class="close-button"></div>
+			<div id="head">Register As Follows:</div>
+            <div class="curtain_left">
+                <h2>Cultural Events</h2>
+				<form name="cultural" id="cultural" class="Registration"  method="post" >
+						<div class="wrapper">
+							<span>Name:</span><input name="name" class="input" type="text" autocomplete='off' required>
+						</div>
+						
+						<div class="wrapper">
+							<span>College Name:</span><input name="college" class="input" autocomplete='off' type="text" required >
+						</div>
+						<div class="wrapper">
+							<span>Mobile No.:</span><input name="mob" type="text" class="input" autocomplete='off' required >
+						</div>
+						<div class="wrapper">
+							<span>Event:</span><select name="event" required="required"><option>Battle Of Bands</option><option>CATWALK the Fashion Fiesta</option><option>Calligraphy</option><option>coolympics</option><option>Endurance Reloaded</option><option>Coolympics</option><option>GRAFITI(Wall Painting)</option><option>GURU PARIKSHA</option><option>IDEA PASTE</option><option>Look Estilo</option><option>midnight music</option><option>maulikrchna</option><option>Minute To Win It</option><option>NO GRAVITY</option><option>sketch and painting</option><option>slow bike race</option><option>Snap-Shot</option><option>SUCCESS PATH</option><option>Take the street</option><option>TREASURE HUNT</option></select>
+						</div>
+						<input class="submit" type="submit" value="Send">
+          </form>
+            </div>
+			<img src="cc.png"/>
+            <div class="curtain_right">
+			<h2>Technical Events</h2>
+			<form name="Technical" id="Technical" class="Registration"  method="post" >
+                
+						<div class="wrapper">
+							<span>Name:</span><input name="name" class="input" type="text" autocomplete='off' required">
+						</div>
+						<div class="wrapper">
+							<span>College Name:</span><input name="college" class="input" type="text" autocomplete='off' required>
+						</div>
+						
+						<div class="wrapper">
+							<span>Mobile No.:</span><input name="mob" class="input" autocomplete='off' required type="text" >
+						</div>
+						<div class="wrapper">
+							<span>Event:</span><select name="event" required="required"><option>App Making</option><option>BLIND CODING</option><option>Brain Teaser</option><option>CHAT MASTER</option><option>Circuit Mania</option><option>Debugging</option><option>FLIP SIDE</option><option>Full Throttle</option><option>Hydro Lift</option><option>Join the valley</option><option>JUNKYARD WARS</option><option>Lan-Turn</option><option>line follower</option><option>Off the Trail</option><option>Project Exhibition</option><option>PIRATE  WARS</option><option>robo-FIFA</option><option>SEA HAWKS</option><option>STOCK MARKET CHALLENGE</option><option>SUDOKU</option><option>Technical brains</option><option>vertical limit</option><option>web designing</option></select>
+						</div>
+						<input class="submit" type="submit" value="Send">
+					
+          </form>
+		  </div>
+		</div>
+		<!-- The ribbon -->
+		<div class="forkit" data-text="Register" data-text-detached="Drag down"> 
+</div>
+
+<script src="js/forkit.js"></script>
+
+<script type="text/javascript">
+//config
+$float_speed=1500; //milliseconds
+$float_easing="easeOutQuint";
+$menu_fade_speed=500; //milliseconds
+$closed_menu_opacity=0.75;
+
+//cache vars
+$fl_menu=$("#fl_menu");
+$fl_menu_menu=$("#fl_menu .menu");
+$fl_menu_label=$("#fl_menu .label");
+
+$(window).load(function() {
+	menuPosition=$('#fl_menu').position().top;
+	FloatMenu();
+	});
+
+$(window).scroll(function () { 
+	FloatMenu();
+});
+
+function FloatMenu(){
+	var scrollAmount=$(document).scrollTop();
+	var newPosition=menuPosition+scrollAmount;
+	if($(window).height()<$fl_menu.height()+$fl_menu_menu.height()){
+		$fl_menu.css("top",menuPosition);
+	} else {
+		$fl_menu.stop().animate({top: newPosition}, $float_speed, $float_easing);
+	}
+}
+</script>
+
+<script type="text/javascript">Cufon.now();</script>
+<script type="text/javascript" src="js/jquery.proximity.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				
+				var Photo	= (function() {
+					
+					var $list		= $('#pe-thumbs'),
+						listW		= $list.width(),
+						listL		= $list.offset().left,
+						$elems		= $list.find('img'),
+						$descrp		= $list.find('div.pe-description'),
+						settings	= {
+							maxScale	: 0.9,
+							maxOpacity	: 0.9,
+							minOpacity	: Number( $elems.css('opacity') )
+						},
+						init		= function() {
+							
+							settings.minScale = _getScaleVal();
+							_loadImages( function() {
+								
+								_calcDescrp();
+								_initEvents();
+							
+							});
+						
+						},
+						// Get Value of CSS Scale through JavaScript:
+						// http://css-tricks.com/get-value-of-css-rotation-through-javascript/
+						_getScaleVal= function() {
+						
+							var st = window.getComputedStyle($elems.get(0), null),
+								tr = st.getPropertyValue("-webkit-transform") ||
+									 st.getPropertyValue("-moz-transform") ||
+									 st.getPropertyValue("-ms-transform") ||
+									 st.getPropertyValue("-o-transform") ||
+									 st.getPropertyValue("transform") ||
+									 "fail...";
+
+							if( tr !== 'none' ) {	 
+
+								var values = tr.split('(')[1].split(')')[0].split(','),
+									a = values[0],
+									b = values[1],
+									c = values[2],
+									d = values[3];
+
+								return Math.sqrt( a * a + b * b );
+							
+							}
+							
+						},
+						_calcDescrp	= function() {
+							
+							$descrp.each( function(i) {
+							
+								var $el		= $(this),
+									$img	= $el.prev(),
+									img_w	= $img.width(),
+									img_h	= $img.height(),
+									img_n_w	= settings.maxScale * img_w,
+									img_n_h	= settings.maxScale * img_h,
+									space_t = ( img_n_h - img_h ) / 2,
+									space_l = ( img_n_w - img_w ) / 2;
+								
+								$el.data( 'space_l', space_l ).css({
+									height	: settings.maxScale * $el.height(),
+									top		: -space_t,
+									left	: img_n_w - space_l
+								});
+							
+							});
+						
+						},
+						_initEvents	= function() {
+						
+							$elems.on('proximity.Photo', { max: 170, throttle: 10, fireOutOfBounds : true }, function(event, proximity, distance) {
+								
+								var $el			= $(this),
+									$li			= $el.closest('li'),
+									$desc		= $el.next(),
+									scaleVal	= proximity * ( settings.maxScale - settings.minScale ) + settings.minScale,
+									scaleExp	= 'scale(' + scaleVal + ')';
+								
+								var $desc		= $el.next();
+								if( scaleVal === settings.maxScale ) {
+									
+									$li.css( 'z-index', 1000 );
+									
+									if( $desc.offset().left + $desc.width() > listL + listW ) {
+										
+										$desc.css( 'left', -$desc.width() - $desc.data( 'space_l' ) );
+									
+									}
+									
+									$desc.fadeIn( 800 );
+									
+								}	
+								else {
+									
+									$li.css( 'z-index', 1 );
+									
+									$desc.stop(true,true).hide();
+								
+								}	
+								
+								$el.css({
+									'-webkit-transform'	: scaleExp,
+									'-moz-transform'	: scaleExp,
+									'-o-transform'		: scaleExp,
+									'-ms-transform'		: scaleExp,
+									'transform'			: scaleExp,
+									'opacity'			: ( proximity * ( settings.maxOpacity - settings.minOpacity ) + settings.minOpacity )
+								});
+
+							});
+						
+						},
+						_loadImages	= function( callback ) {
+							
+							var loaded 	= 0,
+								total	= $elems.length;
+							
+							$elems.each( function(i) {
+								
+								var $el = $(this);
+								
+								$('<img/>').load( function() {
+									
+									++loaded;
+									if( loaded === total )
+										callback.call();
+									
+								}).attr( 'src', $el.attr('src') );
+							
+							});
+						
+						};
+					
+					return {
+						init	: init
+					};
+				
+				})();
+				
+				Photo.init();
+				
+			});
+		</script>
+</body>
+</html>

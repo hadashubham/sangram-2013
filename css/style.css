@@ -1,0 +1,396 @@
+/* Getting the new tags to behave */
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {display:block}
+mark, rp, rt, ruby, summary, time {display:inline }
+/* Left & Right alignment */
+.left {float:left}
+.right {float:right}
+body {background:url(../images/bg.jpg) top center no-repeat #000;border:0;font:14px Arial, Helvetica, sans-serif;color:#000;line-height:20px}
+.ic, .ic a {border:0;float:right;background:#fff;color:#f00;width:50%;line-height:10px;font-size:10px;margin:-220% 0 0 0;overflow:hidden;padding:0}
+.css3{border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;box-shadow:0 0 4px rgba(0, 0, 0, .4);-moz-box-shadow:0 0 4px rgba(0, 0, 0, .4);-webkit-box-shadow:0 0 4px rgba(0, 0, 0, .4);position:relative}
+/* Global Structure */
+.main {	margin:0 auto;width:920px}
+/* main layout */
+a {color:#ab0000;text-decoration:underline;outline:none}
+a:hover {text-decoration:none}
+h1 {padding:98px 0 0 72px}
+h2 {font-size:34px;color:#222;line-height:55px;background:url(../images/bg_box1.png) 0 0 no-repeat;padding-left:22px;display:block;overflow:hidden}
+h2 span {font-size:30px}
+h5 {font-size:30px;line-height:1.2em;color:#fff;padding:124px 0 14px 0}
+p {padding-bottom:20px; text-align:justify}
+/* header */
+header {width:100%;height:377px;overflow:hidden}
+
+#fl_menu{background:url(../boo.png);position:absolute;top:60px; left:0px; z-index:999; width:180px; height:300px;float:left;}
+
+#floating_menu {padding:30px 0 0 25px;height:30px;margin-top:145px}
+#floating_menu li {float:left;padding-right:35px;}
+#floating_menu li a {display:block;font-size:24px;color:#6A0000;line-height:1.2em;text-decoration:none;}
+#floating_menu li span {font-size:30px;display:inline-block;margin-top:-4px}
+#floating_menu li a:hover, #floating_menu #floating_menu_active a {color:#00FFF5}
+#menu {padding:56px 0 0 34px;height:30px}
+#menu li {float:left;padding-right:42px}
+#menu li a {display:block;font-size:24px;color:#05080a;line-height:1.2em;text-decoration:none}
+#menu li span {font-size:30px;display:inline-block;margin-top:-4px}
+#menu li a:hover, #menu #menu_active a {color:#6a0000}
+/* content */
+#content {}
+.pad_left1 {padding-left:12px}
+.pad_left2 {padding-left:50px}
+.pad {padding:0 12px}
+.pad_bot1 {padding-bottom:13px}
+.marg_right1 {margin-right:10px}
+.pad_top1 {padding-top:25px} 
+.font1 {font-size:16px}
+.font2 {font-size:12px;font-weight:bold;color:#ab0000}
+.ul_works {padding-bottom:3px}
+.ul_works li {padding-bottom:14px}
+.tweets a {text-decoration:none;color:#ab0000}
+.tweets a:hover {text-decoration:underline}
+.img1 {padding-top:12px}
+.img1 figure {float:left;margin-right:24px;padding-left:5px}
+.list2 {padding:10px 0 15px 0}
+.list2 li {line-height:30px}
+.list2 li a {padding-left:34px;background:url(../images/marker_2.png) 0 5px no-repeat;display:inline-block}
+.link1 {display:inline-block;font-size:12px;font-weight:bold;text-decoration:none;padding-left:30px;background:url(../images/marker_3.png) 1px 0 no-repeat;margin-top:5px}
+.link1:hover {color:#000}
+/* Lightbox image */
+/* footer */
+footer {width:100%;overflow:hidden;padding:0 0 74px 0}
+footer a{}
+footer a:hover{}
+.list1 li {line-height:30px}
+.list1 a {color:#fff;text-decoration:none;padding-left:15px;background:url(../images/marker_1.gif) 0 6px no-repeat}
+.list1 a:hover {color:#ab0000}
+.icons li {line-height:30px}
+.icons a {color:#fff;text-decoration:none}
+.icons a:hover {color:#ab0000}
+.icons img {float:left;margin-right:14px;margin-top:7px}
+/* forms */
+.Registration {float:left;width:356px;border:2px solid #FFFFFF;}
+.Registration .wrapper {min-height:30px}
+.Registration span {float:left;font-weight:bold;width:121px;line-height:26px;color:#FFFFFF;}
+.Registration .submit{ float:right;background:url(../images/send_button.png) no-repeat;width:119px;height:38px;text-indent:-9999px;background-color: Transparent;cursor: pointer;}
+.Registration .input {width:330px;height:18px;background:url(../images/bg_form.png) repeat;padding:4px 10px;
+color:#FFFFFF;font:14px Arial, Helvetica, sans-serif;margin:0;
+	-webkit-box-shadow:inset rgba(0,0,0,0.35) 2px 2px 12px,rgba(0,0,0,0.3) 0 -1px 2px;
+	-moz-box-shadow:inset rgba(0,0,0,0.35) 2px 2px 12px,rgba(0,0,0,0.3) 0 -1px 2px;
+	box-shadow:inset rgba(0,0,0,0.35) 2px 2px 12px,rgba(0,0,0,0.3) 0 -1px 2px;
+	border:1px solid #444;
+	-webkit-transition:all .3s ease;
+	-moz-transition:all .3s ease;
+	transition:all .3s ease;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-o-border-radius:3px;
+	-ms-border-radius:3px;
+	-khtml-border-radius:3px;
+	border-radius:3px}
+.Registration .input:hover{border:1px solid #999;}
+.Registration .input:focus{color:#000000;
+	border:1px solid #800000;
+	-webkit-box-shadow:inset rgba(0,0,0,0.35) 2px 2px 12px,#800000 0 0 10px;
+	-moz-box-shadow:inset rgba(0,0,0,0.35) 2px 2px 12px,#800000 0 0 10px;
+	box-shadow:inset rgba(0,0,0,0.35) 2px 2px 12px,#800000 0 0 10px;
+	outline:0}
+.Registration select {width:350px;height:30px;padding:4px 10px;
+color:#FFFFFF;font:14px Arial, Helvetica, sans-serif;margin:0;	-webkit-box-shadow:inset rgba(0,0,0,0.35) 2px 2px 12px,rgba(0,0,0,0.3) 0 -1px 2px;
+	-moz-box-shadow:inset rgba(0,0,0,0.35) 2px 2px 12px,rgba(0,0,0,0.3) 0 -1px 2px;
+	box-shadow:inset rgba(0,0,0,0.35) 2px 2px 12px,rgba(0,0,0,0.3) 0 -1px 2px;
+	background:#8C8D8E;
+	border:1px solid #444;
+	-webkit-transition:all .3s ease;
+	-moz-transition:all .3s ease;
+	transition:all .3s ease;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-o-border-radius:3px;
+	-ms-border-radius:3px;
+	-khtml-border-radius:3px;
+	border-radius:3px}
+.Registration select:hover {border:1px solid #999}
+.Registration select option:{color:#FFFFFF;}
+.Registration select:focus {color:#FFFFFF;
+	border:1px solid #800000;
+	-webkit-box-shadow:inset rgba(0,0,0,0.35) 2px 2px 12px,#800000 0 0 10px;
+	-moz-box-shadow:inset rgba(0,0,0,0.35) 2px 2px 12px,#800000 0 0 10px;
+	box-shadow:inset rgba(0,0,0,0.35) 2px 2px 12px,#800000 0 0 10px;
+	outline:0}	
+.message{
+    border:1px solid #CCCCCC;
+	position:absolute;
+	width:150px;
+	border:1px solid #c93;
+	background:#ffc;
+	padding:5px;
+	left:0px;
+	top :-120px;
+}
+.col, .col1, .col2, .col3, .cols {float:left}
+.col {width:160px}
+.col1 {width:536px;padding-left:29px}
+.col2 {width:274px;padding-left:78px;padding-top:10px}
+.col3 {width:227px}
+.cols {width:236px}
+.forkit {
+	position: absolute;
+	right: 0;
+	top: 0;
+
+	width: 200px;
+	height: 150px;
+
+	font-family: 'Lato', sans-serif;
+	text-decoration: none;
+}
+	.forkit .tag {
+		display: block;
+		height: 30px;
+		width: 200px;
+		position: fixed;
+		color: #fff;
+		background: #aa0000;
+		text-align: center;
+		font-size: 13px;
+		font-weight: bold;
+		line-height: 30px;
+		box-shadow: 0px 0px 10px rgba( 0, 0, 0, 0.4 );
+
+		-webkit-transform-origin: 15px 0px;
+		   -moz-transform-origin: 15px 0px;
+		    -ms-transform-origin: 15px 0px;
+		     -o-transform-origin: 15px 0px;
+		        transform-origin: 15px 0px;
+	}
+	.forkit .tag:after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 196px;
+		height: 26px;
+		margin: 1px;
+		border: 1px solid rgba( 255, 255, 255, 0.4 );
+	}
+	.forkit .string {
+		display: block;
+		height: 1px;
+		width: 0px;
+		position: absolute;
+
+		background: rgba( 255, 255, 255, 0.7 );
+		box-shadow: 0px 0px 10px rgba( 0, 0, 0, 0.4 );
+
+		-webkit-transform-origin: 0px 0px;
+		   -moz-transform-origin: 0px 0px;
+		    -ms-transform-origin: 0px 0px;
+		     -o-transform-origin: 0px 0px;
+		        transform-origin: 0px 0px;
+	}
+
+.curtain_right{position:relative;float:right;right:2%;}
+
+.curtain_left{float:left;position:relative;left:2%;}
+
+.forkit-curtain {
+	position: fixed;
+	width: 100%;
+	height: 79%;
+}
+
+#curtain_wrapper{
+position:relative;
+width:100%;
+min-width:1000px;
+overflow:auto;
+}
+
+#curtain_wrapper img{
+position:relative;
+float:left;
+margin:3%;
+}
+
+.forkit-curtain #head {
+   font-size:44px;
+	color:#FFFFFF;
+	position:relative;
+}
+
+.forkit-curtain {
+	text-align: center;
+	background: rgba( 0, 0, 0, 0.8 );
+	padding-top: 10%;
+	z-index:1000;
+}
+	.forkit-curtain  .close-button {
+		position: absolute;
+		width: 32px;
+		height: 32px;
+		right: 20px;
+		top: 30px;
+		cursor: pointer;
+
+		background: url(../images/close_pop.png);
+	}
+#dialog {position:fixed; width:425px; padding:10px; z-index:2000; background:#fff;}
+#dialog-header {display:block; position:relative; width:411px; padding:3px 6px 7px; height:14px; font-size:14px; font-weight:bold}
+#dialog-title {float:left}
+#dialog-close {float:right; cursor:pointer; margin:3px 3px 0 0; height:11px; width:11px; background:url(../images/dialog_close.gif) no-repeat}
+#dialog-content {display:block; height:160px; padding:6px; color:#666666; font-size:20px;text-align:center;}
+#dialog-mask {position:fixed; top:0; left:0; min-height:100%; width:100%; background:#000000; opacity:.8; filter:alpha(opacity=75); z-index:1000}
+.error {background:#fff url(../images/error_bg.jpg) bottom right no-repeat; border:1px solid #924949; border-top:none}
+.errorheader {background:url(../images/error_header.gif) repeat-x; color:#6f2c2c; border:1px solid #924949; border-bottom:none}
+.warning {background:#fff url(../images/warning_bg.jpg) bottom right no-repeat; border:1px solid #c5a524; border-top:none}
+.warningheader {background:url(../images/warning_header.gif) repeat-x; color:#957c17; border:1px solid #c5a524; border-bottom:none}
+.success {background:#fff url(../images/success_bg.jpg) bottom right no-repeat; border:1px solid #60a174; border-top:none}
+.successheader {background:url(../images/success_header.gif) repeat-x; color:#3c7f51; border:1px solid #60a174; border-bottom:none}
+.prompt {background:#fff url(../images/prompt_bg.jpg) bottom right no-repeat; border:1px solid #4f6d81; border-top:none}
+.promptheader {background:url(../images/prompt_header.gif) repeat-x; color:#355468; border:1px solid #4f6d81; border-bottom:none}
+/*
+Name: Sliding Login Panel with jQuery 1.3.2
+Author: Jeremie Tisseau
+Author URI: http://web-kreation.com/
+Date: March 26, 2009
+Version: 1.0
+
+	Copyright 2009 Jeremie Tisseau
+	"Sliding Login Panel with jQuery 1.3.2" is distributed under the GNU General Public License version 3:
+	http://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+/***** clearfix *****/
+
+/* Panel Tab/button */
+.tab {
+  	background: url(../images/sliding_panel_images/tab_b.png) repeat-x 0 0;
+	height: 42px;
+	position: relative;
+    top: 0;
+    z-index: 999;
+}
+
+.tab ul.login {
+	display: block;
+	position: relative;
+  	float: left;
+  	clear: right;
+  	height: 42px;
+	width: auto;
+  	font-weight: bold;
+	line-height: 42px;
+	margin: 0;
+	left: 150px;
+  	color: white;
+  	font-size: 80%;
+	text-align: center;
+}
+
+.tab ul.login li.left {
+  	background: url(../images/sliding_panel_images/tab_l.png) no-repeat left 0;
+  	height: 42px;
+	width: 30px;
+	padding: 0;
+	margin: 0;
+  	display: block;
+	float: left;
+}
+
+.tab ul.login li.right {
+  	background: url(../images/sliding_panel_images/tab_r.png) no-repeat left 0;
+  	height: 42px;
+	width: 30px;
+	padding: 0;
+	margin: 0;
+  	display: block;
+	float: left;
+}
+
+.tab ul.login li {
+ 	text-align: left;
+  	padding: 0 6px;
+	display: block;
+	float: left;
+	height: 42px;
+  	background: url(../images/sliding_panel_images/tab_m.png) repeat-x 0 0;
+}
+
+.tab ul.login li a {
+	color: #15ADFF;
+}
+
+.tab ul.login li a:hover {
+	color: white;
+}
+
+.tab .sep {color:#414141}
+
+.tab a.open, .tab a.close {
+	height: 20px;
+	line-height: 20px !important;
+	padding-left: 30px !important;
+	cursor: pointer;
+	display: block;
+	width: 100px;
+	position: relative;
+	top: 11px;
+}
+
+.tab a.open {background: url(../images/sliding_panel_images/bt_open.png) no-repeat left 0;}
+.tab a.close {background: url(../images/sliding_panel_images/bt_close.png) no-repeat left 0;}
+.tab a:hover.open {background: url(../images/sliding_panel_images/bt_open.png) no-repeat left -19px;}
+.tab a:hover.close {background: url(../images/sliding_panel_images/bt_close.png) no-repeat left -19px;}
+
+/* sliding panel */
+#toppanel {
+    position: absolute;   /*Panel will overlap  content */
+    /*position: relative;*/   /*Panel will "push" the content down */
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#panel {
+	width: 100%;
+	height: 80px;
+	color: #999999;
+	background: #272727;
+	overflow: hidden;
+	position: relative;
+	z-index: 3;
+	display: none;
+}
+
+#panel a {
+	text-decoration: none;
+	color: #15ADFF;
+	padding-left: 5px;
+		}
+		
+#panel a:hover {
+	color: white;
+}
+
+#panel .content {
+	width: 1160px;
+	margin: 0 auto;
+	padding-top: 15px;
+	text-align: left;
+	font-size: 1.2em;
+}
+
+#panel .content .left {
+	width: 350px;
+	float: left;
+	padding: 0 15px;
+	border-left: 1px solid #333;
+}
+
+#panel .content .right {
+	border-right: 1px solid #333;
+	float:right;
+}
+

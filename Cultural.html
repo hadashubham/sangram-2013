@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Cultural Events</title>
+<meta charset="utf-8">
+	<meta name="description" content="SANGRAM 2013: LIET Chikani, Alwar presents
+is the annual techno-management  fest organized by the students of  LAXMI DEVI  INSTITUTE OF ENGINEERING & TECHNOLOGY from 1 march to 3 march,2013.">
+<meta name="Keywords" content="tech, lecture, LIET, Alwar,
+technology, competitions, events, workshop, exhibition, fest,
+technical, robotics, festival, sangram, rajasthan, college, techfest,india,2013,upcoming,college,fest,engineering" />
+<meta name="Author" content="Sangram 2013" />
+<meta property="og:title" content="Sangram 2013"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="http://sangram2013.in/"/>
+<meta property="og:site_name" content="Sangram 2013"/>
+<meta property="og:description" content="SANGRAM 2013: LIET Chikani, Alwar presents
+is the annual techno-management  fest organized by the students of  LAXMI DEVI  INSTITUTE OF ENGINEERING & TECHNOLOGY from 1 march to 3 march,2013."/>
+<meta http-equiv="cache-control" content="public" />
+		<meta http-equiv="expires" content="Fri, Nov 2013, 00:00:00 GMT" />
+
+<link rel="shortcut icon" href="icon.ico" type="image/png" />
+
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<link rel="stylesheet" type="text/css" href="css/styleproximity.css" />
+
+<style type="text/css">
+#mask {
+	display: none;
+	background: #000; 
+	position: fixed; left: 0; top: 0; 
+	z-index: 10;
+	width: 100%; height: 100%;
+	opacity: 0.8;
+	z-index: 999;
+}
+
+.login-popup-detail{
+	display:none;
+	background: #E9C49B;
+	padding: 10px; 	
+	border: 2px solid #ddd;
+	float: left;
+	font-size: 1.2em;
+	position: fixed;
+	top:10%;
+	left:10%;
+	height: 80%;
+	width:80%;
+	z-index: 9999;
+	box-shadow: 0px 0px 20px #999;
+	-moz-box-shadow: 0px 0px 20px #999; /* Firefox */
+    -webkit-box-shadow: 0px 0px 20px #999; /* Safari, Chrome */
+	border-radius:3px 3px 3px 3px;
+    -moz-border-radius: 3px; /* Firefox */
+    -webkit-border-radius: 3px; /* Safari, Chrome */
+}
+
+img.btn_close {
+	float: right; 
+	margin: -28px -28px 0 0;
+	z-index:1000000;
+}
+#info_container{
+position:relative;
+overflow:auto;
+height:100%;
+width:100%;
+z-index:10000;
+}
+.pe-thumbs{
+	background: transparent url(images/cul.png) top center;
+}
+</style>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon-replace.js"></script>
+<script type="text/javascript" src="js/CabinSketch_700.font.js"></script>
+<script type="text/javascript" src="js/EB_Garamond_400.font.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/slide.js"></script>
+<script type="text/javascript" src="js/dialog_box.js"></script>   
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#Technical").validate({
+				submitHandler: function(form) {
+				// do other stuff for a valid form
+				$.post('script.php', $("#Technical").serialize(), function(data) {
+					form.reset();
+				cultural.reset();
+				showDialog('Thank You','you have been successfully registered','success');
+					});
+			}
+		});
+		});
+	</script>
+	
+<script type="text/javascript">
+$(document).ready(function(){
+$("#cultural").validate({
+				submitHandler: function(form) {
+				// do other stuff for a valid form
+				$.post('script.php', $("#cultural").serialize(), function(data) {
+		form.reset();
+				Technical.reset();
+	showDialog('Thank You','you have been successfully registered','success');
+				});
+			}
+		});
+		});
+	</script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a.login-window').click(function() {
+		
+		// Getting the variable's value from a link 
+		var loginBox = $(this).attr('href');
+
+		//Fade in the Popup and add close button
+		$(loginBox).fadeIn(300);
+		
+		//Set the center alignment padding + border
+		//var popMargTop = ($(loginBox).height() + 24) / 2; 
+		//var popMargLeft = ($(loginBox).width() + 24) / 2; 
+		
+		//$(loginBox).css({ 
+			//'margin-top' : -popMargTop,
+			//'margin-left' : -popMargLeft
+		//});
+		
+		// Add the mask to body
+		$('body').append('<div id="mask"></div>');
+		$('#mask').fadeIn(300);
+		
+		return false;
+	});
+	
+	// When clicking on the button close or the mask layer the popup closed
+	$('a.close, #mask').live('click', function() { 
+	  $('#mask , .login-popup-detail').fadeOut(300 , function() {
+		$('#mask').remove();  
+	}); 	
+	return false;
+	});
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+	//first slide down and blink the alert box
+    $("#object").animate({ 
+        top: "40px"
+      }, 2000 ).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
+   
+   //close the message box when the cross image is clicked 
+   $("#close_message").click(function()
+	{
+	   $("#object").fadeOut("slow");
+	});
+});
+</script>
+<!-- [if lt IE 9]>
+<script type="text/javascript" src="js/html5.js"></script>
+<style type="text/css">
+.bg {behavior:url(js/PIE.htc)}
+</style>
+<![endif]-->
+<!-- [if lt IE 7]>
+<div style='clear:both;text-align:center;position:relative'>
+	<a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg" border="0" alt="" /></a>
+</div>
+<![endif]-->
+</head>
+<body>
+<div id="object" class="message"> 
+  <img id="close_message" style="float:right;cursor:pointer"  src="images/12-em-cross.png" />
+    <strong>Prizes to be win for more than Rs2,50,000 </strong>
+</div>
+<div id="toppanel">
+    <div style="display: none;" id="panel">
+        <div class="content clearfix">
+            <div class="left">
+                <a href="Sangram Events coordinators name.pdf" target="_blank""><img src="sh1.png">Download Coordinators list</a>
+			</div>
+            <div class="left"><a href="sponsors  proposal.pdf" target="_blank"><img src="sh1.png">Download Sponsorship Proposal</a>
+            </div>
+            <div class="left right"><a href="venue.pdf" target="_blank"><img src="sh1.png">Download Schedule</a>
+			</div>
+        </div>
+    </div> 
+
+    <!-- The tab on top -->
+    <div class="tab">
+        <ul class="login">
+            <li class="left">&nbsp;</li>
+            <li id="toggle">
+                <a style="display: block;" id="open" class="open">Downloads !!!</a>
+                <a id="close" style="display: none;" class="close">Close Panel</a>
+            </li>
+            <li class="right">&nbsp;</li>
+        </ul>
+    </div> <!-- / top -->
+
+</div> <!--panel -->
+    
+
+<div id="fl_menu">
+				<ul id="floating_menu">
+					<li><a href="sponsers.html"><span>S</span>ponsors</a></li>
+				    <li><a href="funcorner.html"><span>F</span>unCorner</a></li>
+					<li><a href="celebrity.html"><span>C</span>elebrity</a></li>
+				</ul>	
+</div>
+
+<div class="main">
+<!-- header -->
+	<header>
+	  <div class="wrapper">
+			<nav>
+				<ul id="menu">
+					<li><a href="index.html"><span>H</span>ome</a></li>
+				    <li id="menu_active"><a href="events.html"><span>E</span>vents</a></li>
+					<li><a href="workshop.html"><span>W</span>orkshops</a></li>
+					<li><a href="special.html"><span>S</span>pecial</a></li>
+					<li><a href="Contacts.html"><span>C</span>ontacts</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+<!-- / header -->
+<!-- content -->
+	<section id="content">
+		<div class="wrapper">
+			<article class="col1">
+				<h2>Cultural Events</h2><br/>
+				<div class="pad_left1 pad_bot1">
+						 <div class="container">
+			<section class="pe-container">
+				<ul id="pe-thumbs" class="pe-thumbs">
+					<li><a href="#event_info_Battle"class="login-window"><img src="images/Event_logos/Cultlogos/1.png" /><div class="pe-description"><h3>Battle of Bands</h3><p>Click  to see the details</p></div></a></li>
+					<li><a href="#event_info_Calligraphy"class="login-window"><img src="images/Event_logos/Cultlogos/2.png" /><div class="pe-description"><h3>Calligraphy</h3><p>Click  to see the details</p></div></a></li>
+					<li><a href="#event_info_Catwalk"class="login-window"><img src="images/Event_logos/Cultlogos/3.jpg" /><div class="pe-description"><h3>Catwalk The Fashion Fiesta</h3><p>Click  to see the details</p></div></a></li>
+					<li><a href="#event_info_Coolympics"class="login-window"><img src="images/Event_logos/Cultlogos/4.png" /><div class="pe-description"><h3>Coolympics</h3><p>Click  to see the details</p></div></a></li>
+					<li><a href="#event_info_Endurance"class="login-window"><img src="images/Event_logos/Cultlogos/5.jpg" /><div class="pe-description"><h3>Endurance Reloaded</h3><p>Click  to see the details</p></div></a></li>
+					<li><a href="#event_info_Grafitti"class="login-window"><img src="images/Event_logos/Cultlogos/6.png" /><div class="pe-description"><h3>Grafitti</h3><p>Click  to see the details</p></div></a></li>
+					<li><a href="#event_info_Guru"class="login-window"><img src="images/Event_logos/Cultlogos/7.png" /><div class="pe-description"><h3>Guru Pariksha</h3><p>Click  to see the details</p></div></a></li>
+					<li><a href="#event_info_Idea"class="login-window"><img src="images/Event_logos/Cultlogos/8.png" /><div class="pe-description"><h3>Idea Paste</h3><p>Click  to see the details</p></div></a></li>
+					<li><a href="#event_info_Look"class="login-window"><img src="images/Event_logos/Cultlogos/9.png" /><div class="pe-description"><h3>Look Estilo</h3><p>Click to see the details</p></div></a></li>
+					<li><a href="#event_info_Maulik"class="login-window"><img src="images/Event_logos/Cultlogos/10.png" /><div class="pe-description"><h3>Maulik Rachna</h3><p>Click  to see the details</p></div></a></li>
+					<li><a href="#event_info_Midnight"class="login-window"><img src="images/Event_logos/Cultlogos/11.png" /><div class="pe-description"><h3>Midnight Music</h3><p>Click  to see the details</p></div></a></li>
+					<li><a href="#event_info_Minute"class="login-window"><img src="images/Event_logos/Cultlogos/12.png" /><div class="pe-description"><h3>Minute to Win it</h3><p>Click  to see the details</p></div></a></li>
+					<li><a href="#event_info_No"class="login-window"><img src="images/Event_logos/Cultlogos/13.png" /><div class="pe-description"><h3>No Gravity</h3><p>Click  to see the details</p></div></a></li>
+					<li><a href="#event_info_Sketch"class="login-window"><img src="images/Event_logos/Cultlogos/14.jpg" /><div class="pe-description"><h3>Sketch Painting</h3><p>Click to see the details</p></div></a></li>
+					<li><a href="#event_info_Slow"class="login-window"><img src="images/Event_logos/Cultlogos/15.png" /><div class="pe-description"><h3>Slow Bike Race</h3><p>Click  to see the details</p></div></a></li>
+					<li><a href="#event_info_Snap"class="login-window"><img src="images/Event_logos/Cultlogos/16.png" /><div class="pe-description"><h3>Snap Shot</h3><p>Click  to see the details</p></div></a></li>
+					<li><a href="#event_info_Take"class="login-window"><img src="images/Event_logos/Cultlogos/17.png" /><div class="pe-description"><h3>Take the Streets</h3><p>Click  to see the details</p></div></a></li>
+					<li><a href="#event_info_Success"class="login-window"><img src="images/Event_logos/Cultlogos/18.jpg" /><div class="pe-description"><h3>Success Path</h3><p>Click  to see the details</p></div></a></li>
+					<li><a href="#event_info_Treasure"class="login-window"><img src="images/Event_logos/Cultlogos/19.jpg" /><div class="pe-description"><h3>Treasure Hunt</h3><p>Click  to see the details</p></div></a></li>
+					</ul>
+			</section>
+        </div>
+				</div>	
+				<br/><br/>
+								</article>		
+		<article class="col2">
+				<img src="images/sponsors.png">
+				<ul class="ul_works">
+                 <marquee  behavior="alternate" direction="up" bgcolor="" width="400" height="200">
+				 <li><a href="sponsers.html"><img src="images/sponsors/orion.png" alt="" style="border:solid" width="100" height="100" /></a>
+					&nbsp;<a href="sponsers.html"><img src="images/sponsors/priyal.jpg" alt="" style="border:solid"   height="100" width="142"/></a></li>
+				 <li><a href="sponsers.html"><img src="images/sponsors/rvm.jpg" alt="" style="border:solid"   height="60" width="258"/ > </a> </li>
+                 <li><a href="sponsers.html"> <img src="images/sponsors/hin-logo.jpg" alt="" style="border:solid"   height="100" width="100"/ > </a>
+		         &nbsp; <a href="sponsers.html"><img src="images/sponsors/appin.jpg" alt="" style="border:solid"  width="142" height="100"/></a></li>
+				 <li> <a href="sponsers.html"><img src="images/sponsors/pcra org.jpg" alt="" style="border:solid"  height="60" width="258"/></a></li>
+				 <li><a href="sponsers.html"><img src="images/sponsors/cafe_chokolade_final_logo.png" alt="" style="border:solid"   height="100" width="130"/></a>
+				 &nbsp; <a href="sponsers.html"><img src="images/sponsors/201106031501338520_35832.jpg" alt="" style="border:solid"   height="100" width="114"/></a></li>
+				 <li> <a href="sponsers.html"><img src="images/sponsors/go4tech.jpg" alt="" style="border:solid"   height="100" width="142"/ ></a>
+				 &nbsp; <a href="sponsers.html"> <img src="images/sponsors/logo la-vita.jpg" alt="" style="border:solid"   height="100" width="100"/ ></a> </li> 
+				 <li>&nbsp; <a href="sponsers.html"><img src="images/sponsors/IMG.jpg" alt="" style="border:solid"   height="100" width="121"/ ></a></li>
+				 <li> <a href="sponsers.html"><img src="images/sponsors/goyal investment.JPG" alt="" style="border:solid"   height="80" width="258"/ ></a></li>
+				 <li> <a href="sponsers.html"><img src="images/sponsors/Manav classes.jpg" alt="" style="border:solid"   height="80" width="258"/ > </a></li>
+				 <li><a href="sponsers.html"> <img src="images/sponsors/gatehelpdesk logo.jpg" alt="" style="border:solid"   height="80" width="258"/ ></a></li>
+		</marquee>	</ul>
+				 <img src="images/events.png">
+				 <ul class="ul_works">
+                 <marquee behavior="repeat" direction="up" bgcolor="">
+				 <li><a href="events.html"><img src="images/Event_logos/techlogo/20.jpg" alt=""></a></li>
+                 <li><a href="events.html"><img src="images/Event_logos/Cultlogos/3.jpg" alt=""></a></li>
+				 <li><a href="events.html"><img src="images/Event_logos/techlogo/2.jpg" alt=""></a></li>
+                 <li><a href="events.html"><img src="images/Event_logos/Cultlogos/4.png" alt=""></a></li>
+				 <li><a href="events.html"><img src="images/Event_logos/techlogo/12.png" alt=""></a></li>
+                 <li><a href="events.html"><img src="images/Event_logos/Cultlogos/7.png" alt=""></a></li>
+				 <li><a href="events.html"><img src="images/Event_logos/techlogo/16.PNG" alt=""></a></li>
+                 <li><a href="events.html"><img src="images/Event_logos/Cultlogos/19.jpg" alt=""></a></li>
+				 </marquee>			
+    			</ul>
+				<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fsangram2013%3Fref%3Dts%26fref%3Dts&amp;width=292&amp;height=258&amp;show_faces=true&amp;colorscheme=light&amp;stream=false&amp;border_color&amp;header=false" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:274px; height:258px;" allowTransparency="true"></iframe>
+
+			</article>
+	</div>
+		
+	</section>
+<!-- / content -->
+<!-- footer -->
+	<footer>
+		<div class="wrapper">
+			
+			
+			<article class="col pad_left2">
+				
+			</article>
+		</div>
+	</footer>
+<!-- / footer -->
+</div>
+<div id="event_info_Coolympics" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<div id="info_container">
+		<h2>Coolympics</h2>
+<p><strong>Introduction :</strong><br> coolympics is series of events or a system that  
+ describes how cool a person is.
+ each contestant willl be awarded with cool points for each task, 
+ in the end which contestent has max cool point will be considerd as winner . 
+ contestents will be judged by coolest facultys of our college.both girls and boys can participate to be mr cool \ms cool. 
+<br><strong>Rules :</strong><br>
+each player will get 100 point for starting Cool points can hypothetically be given or taken away depending on what someone does. 
+Cool points are added if someone does something cool; however, they are also subtracted when someone does something dumb. 
+The number of points depends on what has been done.<br>
+<strong>Events :</strong><br>Three rounds will be played including finals<br> 
+1. First round: Mr and Mis awesome<br>
+>> coolest intro ever - by the candidates<br>
+>> paris Hilton-Brad Pitt round- street walk and attitude<br>
+>>.know how round- 2 ques per candidate(36)<br>
+In the end of the first round points will be calculated and qualified players will be called as awesomes.<br>
+2. Second round: aware of dare <br>
+>> on spot dare- your charms(12)<br>
+>>	Rapid fire- your wittiness and presence of mind(36)<br>
+>>  one personal skill- showcase your talents<br>
+In the end of the round points will be calculated and qualified players will be called as dudes<br>
+3. Final round will be played<br>  
+>> awesome brains (6)<br> 
+>> aware of dare(6)<br>
+		<strong>Prize Money :</strong>Male Prize 2100,&nbsp;Female Prize 2100</div></div>
+		
+	    
+    
+    
+    
+    
+    <div id="event_info_Battle" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<div id="info_container">
+		<h2>Battle of Bands</h2>
+<p><strong>Introduction :</strong><br>Battle of Bands is a contest in which two or more bands compete for the title of "Best Band".
+ The winner is determined by a panel of judges, the general response of the audience, or a combination.<br>
+ <strong> Rules :</strong><br>The band must consist a min of 3 members.
+<br>>>	A Rs 500.00 entry fee is due with your application. Any bands not selected to compete will have their entry fee returned.<br>
+>>	The committee will have final selection of competing bands.<br>
+>>	NO VULGARITY, drug or sexual references on the CD or during the band’s performance.<br>
+>> There will be immediate eliminated for breaking this rule.
+<br>>>	Each band will have half hour to set up, perform and tear down. Please limit song selections to 3. They may be cover or original songs.
+<br>>>	Prizes will be given for other categories i.e.; Best Guitarist, Best Drummer, vocalist, etc.
+<br><strong>Prize Money :</strong> Rs/- 25000+15000
+
+	</div></div>
+
+
+
+
+
+
+<div id="event_info_Take" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<div id="info_container">
+		<h2>Take the street</h2>
+<p><strong> Description :</strong><br> Shakespeare said life is a stage but sometimes a stage is what one wants.
+A stage is a platform, where you perform, you act,you define the life itself. 
+but yet sometimes a stage is not enough to describe its exhubarance. 
+So we provide you with a stage which is not a platform above the people but it’s the people itself. 
+So use it in the best way you can. Use the streets as your stage and depict what you can do.
+<br><strong>Rules :</strong> <br>>> The team should atleast be of 6 members.
+<br>>>	The play can not exceed 14 minutes.
+	<br>>> Entry fees 100rs per team(refundable**).<br>
+    <strong>Prize Money :</strong>1st Prize Rs/- 4000,&nbsp;2nd Prize Rs/- 2000
+	</div></div>
+
+
+
+<div id="event_info_Midnight" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<div id="info_container">
+		<h2>Midnight Music</h2>
+<strong> Description :</strong><br> Solo or duet singing.<br><strong>Rounds :</strong><br> Tow rounds will be there<br>
+Selection and Final Performance
+<br><strong>Prize Money :</strong>1st Prize Rs/- 2000,&nbsp;2nd Prize Rs/- 1000</div></div>
+
+
+
+<div id="event_info_Snap" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<div id="info_container">
+		<h2>Snap-Shot</h2>
+<strong> Description :</strong><br> So you think you can click? can you click in the open streets or crowdy arena? 
+Here's the time to bring up your skills in action. 
+Snap-Shot is all about photography.
+The contestants have to click photographs during the 3 day event anywhere in the campus to capture moments. 
+The snaps may include any usual and unusual event occurring in the campus or any scenic beauty etc.
+<br><strong>Duration :</strong>&nbsp; 3 days<br><strong>Number of Snaps :</strong>&nbsp; 10 per team
+<br><strong>Formats :</strong>&nbsp; *.jpg , *.jpeg , *.jfif , *.gif , *.tif , *.tiff , *.png
+<br><strong>Image pixel size :</strong>&nbsp; minimum 800*600.
+<br><strong>Prize :</strong>&nbsp; The snaps will be displayed on the main stage during the final event and the prize will be 
+awarded that time to the winner.
+<br><strong>Rules :</strong> <br>>> The contestants needs to keep in mind that interest of any person or authority is not hampered by the picture clicked.
+<br>
+>> The photos can be rotated etc. but cannot be edited to an extent that the meaning of the image changes(eg. photo mixing cannot be done).
+<br>
+>> No copyrighted photos can be used. If found the team will be immediately disqualified.
+<br>
+>> The clarity of the picture must be kept in consideration. The contestant has no right to question the judge.
+ <br><strong>Prize Money :</strong>&nbsp;1st Prize 1100
+	</div></div>
+
+
+
+
+
+
+
+
+
+    
+    
+    
+	<div id="event_info_Grafitti" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<div id="info_container">
+		<h2>Grafitti</h2>
+<strong>Introduction :</strong><br>Mind blowing pictures. Social texts. Modern art. Cool  texts:  youngistan based Alive thoughts.<br>
+i.&nbsp;Nature message.<br>
+ii.&nbsp;Or anything that resonates your heart.
+<br><strong>Entry Fees :</strong>&nbsp;Rs/- 50 per group<br><strong>Rules :</strong><br> 	
+>> Maximum 3 can participate in a group,We appreciate individual participation too.<br>
+>>	Winner will be judge based only.<br>
+>> No querul will be entertained regarding external help during painting.<br>
+>>	Event to be executed in 1st two weeks of Feb.(5th feb-14th feb)<br>
+>>	No group will be allowed to paint till they submit a rough sketch.
+<br>
+<strong>Prize Money :</strong>1st Prize 2000,&nbsp;2nd Prize 1500		</div></div>
+		
+		
+		<div id="event_info_Catwalk" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<div id="info_container">
+		<h2>CATWALK</h2>
+<strong> Executive Summary :</strong><br> “CATWALK the Fashion Fiesta” is the fascinating event in ‘Sangram’ hosted by 
+Laxmi Devi Institute of Engineering and Technology.
+This competition will help the student to learn the culture of attire and boost their confidence. 
+It is designed to give students the motivation of self preservation as it’s an old saying that 
+“first impression is the last impression” and first impression is how we carry our self.
+<br><strong>Rules :</strong><br>
+>>	Any team must consist members between 7 to 9.<br>
+>>	Teams are free to be innovative and creative in terms of music, clothes, accessories and props, 
+which should strongly reflect the theme they wish to portray.<br>
+>>	Props must be arranged by the team themselves.<br>
+>>	Usage of fire, water and other potentially dangerous props is strictly prohibited.<br>
+>>	A CD of the respective team music must be submitted with their form.<br>
+>>	Entry fee of Rs 500 is due with your application. Any team (from LIET) not selected to compete will have full of their entry fee returned.<br>
+>>Exceeding the time limit of 6 minutes will induce negative marking.<br>
+>>	All registered members of the team must be available for their performance that evening on time.<br>
+>>	No VULGAIRITY allowed.
+<br><strong>Prize Money :</strong> Rs 25,000 (CASH) + Rs 5,000 gift hampers
+ </div></div>
+<div id="event_info_No" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<div id="info_container">
+		<h2>No Gravity</h2>
+<strong> Description :</strong><br>SANGRAM is holding a dance competition “NO GRAVITY”.
+Judges panel includes our faculty members and members from reputed dance group.
+<br><strong>Entry Fee :</strong>&nbsp;Rs/- 50 per head<br>
+<strong>Categories :</strong>&nbsp; Solo, Duet, Trio, Group (min 5).<br>
+<strong>Time Limit :</strong>&nbsp;Solo, Duet, Trio- MINIMUM- 3 min, MAXIMUM- 5 min. Group- MINIMUM- 7 min, MAXIMUM-10min.,<br>
+<strong>Auditions :</strong>&nbsp; 25th February.<br>
+<strong>Prize Money :</strong>&nbsp; 1st Prize Rs/- 3100,&nbsp;2nd Prize Rs/- 2100
+		</div></div>
+		
+		<div id="event_info_Slow" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<div id="info_container">
+		<h2>Slow bike race</h2>
+<strong>Introduction :</strong><br>Slow bike race is the event where the participants have to drivetheir bike as slow as possible.
+participant with the longest drive time will be the winner.<br>
+<strong>Rules :</strong> <br>
+>>Participant should own his own Bike.<br>
+>>If the participant any how touches the ground he will be disqualified.<br>
+>>The paticipant taking the longest time will be the winner of the event.
+ <br><strong>Prize Money :</strong>&nbsp;1st Prize Rs/- 1100
+</div>
+</div>		
+	
+
+
+	
+	
+	
+   <div id="event_info_Calligraphy" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+<div id="info_container">		
+				       <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<h2>Calligraphy</h2>
+<strong> Description :</strong><br> Show Our English Cursive Handwriting In The Best Possible Way They Can.
+<br><strong>Entry Fee :</strong>&nbsp; Null<br><strong>Prize Money :</strong>&nbsp;1st Prize Rs/- 500</div></div>
+   
+   
+   <div id="event_info_Endurance" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+<div id="info_container">		
+				       <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<h2>Endurance Reloaded</h2>
+<strong> Description :</strong><br> *	This is a race based event in which the entries will be in pairs.
+<br>*	At the end of every round a team will be eliminated on performance basis.
+	<br>* The race will be done in a three phase protocol.<br>
+*	The team winning the grand finale will be announced as the winning team.
+<br><strong>Key to Success(PRELIMINARY ROUND) :</strong><br>
+In this round any numbers of participants are entertained but after this round only ten teams (team of 2) will proceed further 
+for the first halve of the event.<br>
+>>&nbsp;Fastest Will Survive<br>
+FIRST HALVE<br>
+In this halve the 10 qualified teams would be taking part in a series of events including physical challenges etc. 
+and at the end of each round a team will get eliminated.<br>
+>>&nbsp;This halve of the event will be completed on the first day of the fest.
+<br>
+SECOND HALVE<br>
+In this halve the above left 5 teams will continue with the race to reach the grand finale. 
+This part will again constitute of various new activities, hurdles and tasks. By the end of this halve only two teams will survive for the grand finale.
+	<br>Grand Finale 
+<br>The grand finale will be the most difficult and a long race in which the teams will have to 
+go back to all the places at which they had performed their tasks. What they have to do can’t be revealed since the task will be an on spot task.
+<br><strong>Prize Money :</strong>&nbsp;	Rs/- 4000 
+</div></div>
+   
+
+      <div id="event_info_Guru" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+<div id="info_container">		
+				       <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<h2>Garu Pariksha</h2>
+<strong> Description :</strong><br> This event is only for faculties.
+ <br> <strong>Rounds :</strong><br>There are Three rounds-<br>>>&nbsp;1st Round: Introduce Yourself:-<br>
+In this round participants have to introduce themselves in the given time limits in a given order.<br>
+>>&nbsp;2nd Round: Talent Hunt:-<br>
+This is the final round in which participants have to do the task given to them in time limits.<br>
+>>3rd Round: Mock Conference:-<br>
+Participant will be chosen as famous personality. Organizer will ask some funny questions and the participants 
+have to answer them in the style of that personality. 
+Winner will be selected on the basis of all the 3 rounds.
+<br><strong>Entry Fee :</strong>&nbsp; Null<br><strong>Prizes :</strong>&nbsp;Winner will get the title of “Best Teacher Of The Year” and Gift Hampes.
+</div></div>
+
+   
+   
+    <div id="event_info_Idea" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+<div id="info_container">		
+				       <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<h2>Idea Paste</h2>
+<strong> Description :</strong><br>=> 	Topic will be given to participants by random chit system.<br>
+=>	Students(in pair) have to cut/tear material from given paper scraps & paste it on to sheet & 
+that must be releated to topic or explaining the given topic or explaining the given topic.<br>
+
+  <strong>Rules :</strong><br>>>	No scissor or cutters allowed.<br>
+>>	Chit system for topics.<br>
+>>	No pens,pencils allowed.<br>
+>>	Couple Entry.
+<br>
+<strong>Entry Fee :</strong>&nbsp; Rs/- 20 per head<br><strong>Prizes :</strong>&nbsp;Rs/- 1000
+</div></div>
+
+   
+   
+    <div id="event_info_Look" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+<div id="info_container">		
+				       <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<h2>Look Estilo</h2>
+<strong> Description :</strong><br> This is the high time to get the people flat through foppish hair looks 
+and breath taking attitude So just carry such style package and make a mass of people wooed. But it must be spotted & worth following by others.
+ <br> <strong>Rules :</strong><br>>> Maximum no. of members in one team must be two.<br>
+>> Time limit is 30 min. for each team.<br>
+>> Participants have to carry their own material like Gel, Comb, Oil, sparkles, butterflies, curl rollers & temporary hair colors etc.<br>
+>>If any participant sets their hair looks before the starting of the event then he/she will be disqualified.
+
+<br>
+<strong>Prizes :</strong>&nbsp;Rs/- 1000 For Both 1st and 2nd Winners. 
+</div></div>
+
+
+                <div id="event_info_Maulik" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+<div id="info_container">		
+				       <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<h2>Maulik Rachna</h2>
+<strong> Description :</strong><br> Use your literary devices, your flying imagination, 
+your word power and play with words to create a classic writing piece. Language no bar, both Hindi and English are welcomed whole heartily.<br>
+<strong>Time limit :</strong> &nbsp;1 hr
+<br> <strong>Note :</strong>&nbsp;Topic Will be Provided on the spot
+<br>
+<strong>Prizes :</strong>&nbsp;Rs/- 1000 
+</div></div>
+				
+				
+						<div id="event_info_Minute" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+<div id="info_container">		
+				       <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<h2>Minute To Win It</h2>
+ <strong> Description :</strong>
+<br> It is a kind of fun event in which various tasks are given to the participants which is to be completed with inn specific time.
+<br><strong>Entry Fees:</strong>&nbsp; 30 perteam<br><strong>Rules :</strong><br>>> The rule of particular task given at moment to the participants.<br>
+>> 4 Rounds.<br>
+>> It’s a team event, team of 2 people is required.<br>
+>> They have to complete the task in specific time.
+		<br><strong>Prize Money:</strong> &nbsp;Rs/- 1000</div></div>
+           
+   
+                 
+				 <div id="event_info_Sketch" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+<div id="info_container">		
+				       <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<h2>Sketch and painting</h2>
+<strong> Description :</strong>
+<br>=> THERE IS AN INTERESTING EVENT FOR THE ART LOVERS.<br>
+=> "SKETCHING EVENT"
+<br>
+=> SO ALL OF THE ART LOVERS....PAY YOUR HEED HERE...THIS SANGRAM IS GOING TO GIVE YOU AN OPPORTUNITY TO SKETCH YOUR THOUGHTS AND IMAGINATIONS.
+THE SPECIALTY OF THIS EVENT IS THAT THERE IS NO BOUNDARIES AND LIMITS TO POUR YOUR IDEAS ON A SINGLE PIECE OF PAPER.<br>
+
+=> THERE IS NO THEME OR ANY TOPIC TO BOUND YOU....AND ALSO WE ARE GOING TO PROVIDE YOU 2H,4H,6H PENCILS,BOARDS,DRAWING SHEETS ETC.
+SO GUYS DO NOT MISS THIS CHANCE TO SHOW YOUR CREATIVITY.THIS EVENT IS ON 1 march,2013.THE LAST SUBMISSION DATE OF ENTRIES IS 24 february,2013.
+
+<br><strong>Entry Fees:</strong>&nbsp; 30 per head
+		<br><strong>Prize Money:</strong> &nbsp;1st Prize Rs/- 1500, &nbsp;2nd Prize Rs/- 1000</div></div>
+   
+   
+   
+          <div id="event_info_Success" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+<div id="info_container">		
+				       <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<h2>Success Path</h2>
+<strong> Description :</strong>
+<br>A complete personality embroidering event.
+<br><strong>Rules :</strong><br>>> Three rounds will be there-<br>
+* Apptitude<br>
+* Group Task<br>
+* One on one session
+		<br><strong>Entry Fee :</strong> &nbsp;Rs/- 30 per head<br><strong>Prize Money :</strong>1st Prize Rs/- 1000,&nbsp;2nd Prize Rs/- 500</div></div>
+
+		
+		
+		  <div id="event_info_Treasure" class="login-popup-detail">
+        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+<div id="info_container">		
+				       <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+		<h2>Treasure Hunt</h2>
+<strong> Description :</strong>
+<br>THE PARTICIPANTS HAVE TO REACH THE TREASURE HIDDEN BY THE HELP OF THE HINTS PROVIDED AT THE DIFFERENT STAGES. 
+THE TEAM REACHING THE TREASURE IN MINIMUM TIME WILL BE THE WINNER.
+<br><strong>Rules :</strong><br> MAXIMUM 3 PARTICIPANTS IN A TEAM
+		<br><strong>Entry Fee :</strong> &nbsp;Rs/- 30 perteam<br><strong>Prize Money :</strong>1st Prize Rs/- 1500,&nbsp;2nd Prize Rs/- 1000</div></div>
+	
+<!-- The contents (if there's no contents the ribbon acts as a link) -->
+		<div class="forkit-curtain">
+			<div class="close-button"></div>
+			<div id="head">Register As Follows:</div>
+            <div class="curtain_left">
+                <h2>Cultural Events</h2>
+				<form name="cultural" id="cultural" class="Registration"  method="post" >
+						<div class="wrapper">
+							<span>Name:</span><input name="name" class="input" type="text" autocomplete='off' required>
+						</div>
+						
+						<div class="wrapper">
+							<span>College Name:</span><input name="college" class="input" autocomplete='off' type="text" required >
+						</div>
+						<div class="wrapper">
+							<span>Mobile No.:</span><input name="mob" type="text" class="input" autocomplete='off' required >
+						</div>
+						<div class="wrapper">
+							<span>Event:</span><select name="event" required="required"><option>Battle Of Bands</option><option>CATWALK the Fashion Fiesta</option><option>Calligraphy</option><option>coolympics</option><option>Endurance Reloaded</option><option>Coolympics</option><option>GRAFITI(Wall Painting)</option><option>GURU PARIKSHA</option><option>IDEA PASTE</option><option>Look Estilo</option><option>midnight music</option><option>maulikrchna</option><option>Minute To Win It</option><option>NO GRAVITY</option><option>sketch and painting</option><option>slow bike race</option><option>Snap-Shot</option><option>SUCCESS PATH</option><option>Take the street</option><option>TREASURE HUNT</option></select>
+						</div>
+						<input class="submit" type="submit" value="Send">
+          </form>
+            </div>
+			<img src="cc.png"/>
+            <div class="curtain_right">
+			<h2>Technical Events</h2>
+			<form name="Technical" id="Technical" class="Registration"  method="post" >
+                
+						<div class="wrapper">
+							<span>Name:</span><input name="name" class="input" type="text" autocomplete='off' required">
+						</div>
+						<div class="wrapper">
+							<span>College Name:</span><input name="college" class="input" type="text" autocomplete='off' required>
+						</div>
+						
+						<div class="wrapper">
+							<span>Mobile No.:</span><input name="mob" class="input" autocomplete='off' required type="text" >
+						</div>
+						<div class="wrapper">
+							<span>Event:</span><select name="event" required="required"><option>App Making</option><option>BLIND CODING</option><option>Brain Teaser</option><option>CHAT MASTER</option><option>Circuit Mania</option><option>Debugging</option><option>FLIP SIDE</option><option>Full Throttle</option><option>Hydro Lift</option><option>Join the valley</option><option>JUNKYARD WARS</option><option>Lan-Turn</option><option>line follower</option><option>Off the Trail</option><option>Project Exhibition</option><option>PIRATE  WARS</option><option>robo-FIFA</option><option>SEA HAWKS</option><option>STOCK MARKET CHALLENGE</option><option>SUDOKU</option><option>Technical brains</option><option>vertical limit</option><option>web designing</option></select>
+						</div>
+						<input class="submit" type="submit" value="Send">
+					
+          </form>
+		  </div>
+		</div>
+		<!-- The ribbon -->
+		<div class="forkit" data-text="Register" data-text-detached="Drag down"> 
+</div>
+
+<script src="js/forkit.js"></script>
+
+<script type="text/javascript">
+//config
+$float_speed=1500; //milliseconds
+$float_easing="easeOutQuint";
+$menu_fade_speed=500; //milliseconds
+$closed_menu_opacity=0.75;
+
+//cache vars
+$fl_menu=$("#fl_menu");
+$fl_menu_menu=$("#fl_menu .menu");
+$fl_menu_label=$("#fl_menu .label");
+
+$(window).load(function() {
+	menuPosition=$('#fl_menu').position().top;
+	FloatMenu();
+	});
+
+$(window).scroll(function () { 
+	FloatMenu();
+});
+
+function FloatMenu(){
+	var scrollAmount=$(document).scrollTop();
+	var newPosition=menuPosition+scrollAmount;
+	if($(window).height()<$fl_menu.height()+$fl_menu_menu.height()){
+		$fl_menu.css("top",menuPosition);
+	} else {
+		$fl_menu.stop().animate({top: newPosition}, $float_speed, $float_easing);
+	}
+}
+</script>
+
+<script type="text/javascript">Cufon.now();</script>
+
+<script type="text/javascript" src="js/jquery.proximity.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				
+				var Photo	= (function() {
+					
+					var $list		= $('#pe-thumbs'),
+						listW		= $list.width(),
+						listL		= $list.offset().left,
+						$elems		= $list.find('img'),
+						$descrp		= $list.find('div.pe-description'),
+						settings	= {
+							maxScale	: 0.9,
+							maxOpacity	: 0.9,
+							minOpacity	: Number( $elems.css('opacity') )
+						},
+						init		= function() {
+							
+							settings.minScale = _getScaleVal();
+							_loadImages( function() {
+								
+								_calcDescrp();
+								_initEvents();
+							
+							});
+						
+						},
+						// Get Value of CSS Scale through JavaScript:
+						// http://css-tricks.com/get-value-of-css-rotation-through-javascript/
+						_getScaleVal= function() {
+						
+							var st = window.getComputedStyle($elems.get(0), null),
+								tr = st.getPropertyValue("-webkit-transform") ||
+									 st.getPropertyValue("-moz-transform") ||
+									 st.getPropertyValue("-ms-transform") ||
+									 st.getPropertyValue("-o-transform") ||
+									 st.getPropertyValue("transform") ||
+									 "fail...";
+
+							if( tr !== 'none' ) {	 
+
+								var values = tr.split('(')[1].split(')')[0].split(','),
+									a = values[0],
+									b = values[1],
+									c = values[2],
+									d = values[3];
+
+								return Math.sqrt( a * a + b * b );
+							
+							}
+							
+						},
+						_calcDescrp	= function() {
+							
+							$descrp.each( function(i) {
+							
+								var $el		= $(this),
+									$img	= $el.prev(),
+									img_w	= $img.width(),
+									img_h	= $img.height(),
+									img_n_w	= settings.maxScale * img_w,
+									img_n_h	= settings.maxScale * img_h,
+									space_t = ( img_n_h - img_h ) / 2,
+									space_l = ( img_n_w - img_w ) / 2;
+								
+								$el.data( 'space_l', space_l ).css({
+									height	: settings.maxScale * $el.height(),
+									top		: -space_t,
+									left	: img_n_w - space_l
+								});
+							
+							});
+						
+						},
+						_initEvents	= function() {
+						
+							$elems.on('proximity.Photo', { max: 170, throttle: 10, fireOutOfBounds : true }, function(event, proximity, distance) {
+								
+								var $el			= $(this),
+									$li			= $el.closest('li'),
+									$desc		= $el.next(),
+									scaleVal	= proximity * ( settings.maxScale - settings.minScale ) + settings.minScale,
+									scaleExp	= 'scale(' + scaleVal + ')';
+								
+								var $desc		= $el.next();
+								if( scaleVal === settings.maxScale ) {
+									
+									$li.css( 'z-index', 1000 );
+									
+									if( $desc.offset().left + $desc.width() > listL + listW ) {
+										
+										$desc.css( 'left', -$desc.width() - $desc.data( 'space_l' ) );
+									
+									}
+									
+									$desc.fadeIn( 800 );
+									
+								}	
+								else {
+									
+									$li.css( 'z-index', 1 );
+									
+									$desc.stop(true,true).hide();
+								
+								}	
+								
+								$el.css({
+									'-webkit-transform'	: scaleExp,
+									'-moz-transform'	: scaleExp,
+									'-o-transform'		: scaleExp,
+									'-ms-transform'		: scaleExp,
+									'transform'			: scaleExp,
+									'opacity'			: ( proximity * ( settings.maxOpacity - settings.minOpacity ) + settings.minOpacity )
+								});
+
+							});
+						
+						},
+						_loadImages	= function( callback ) {
+							
+							var loaded 	= 0,
+								total	= $elems.length;
+							
+							$elems.each( function(i) {
+								
+								var $el = $(this);
+								
+								$('<img/>').load( function() {
+									
+									++loaded;
+									if( loaded === total )
+										callback.call();
+									
+								}).attr( 'src', $el.attr('src') );
+							
+							});
+						
+						};
+					
+					return {
+						init	: init
+					};
+				
+				})();
+				
+				Photo.init();
+				
+			});
+		</script>
+</body>
+</html>
